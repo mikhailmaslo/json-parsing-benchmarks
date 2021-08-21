@@ -1,0 +1,6 @@
+module Pods_DecodingPerformanceIOSTests {
+  umbrella header "Pods-DecodingPerformanceIOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

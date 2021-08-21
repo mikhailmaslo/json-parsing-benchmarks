@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-DecodingPerformanceIOS/Pods-DecodingPerformanceIOS-frameworks.sh
+${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework
+${BUILT_PRODUCTS_DIR}/JJLISO8601DateFormatter/JJLISO8601DateFormatter.framework
+${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/ZippyJSON/ZippyJSON.framework
+${BUILT_PRODUCTS_DIR}/ZippyJSONCFamily/ZippyJSONCFamily.framework

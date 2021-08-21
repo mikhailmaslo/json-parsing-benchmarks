@@ -1,0 +1,6 @@
+module Pods_DecodingPerformanceIOS {
+  umbrella header "Pods-DecodingPerformanceIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

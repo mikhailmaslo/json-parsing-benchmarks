@@ -1,0 +1,28 @@
+PODS:
+  - HandyJSON (5.0.2)
+  - ObjectMapper (4.2.0)
+  - Sourcery (1.1.1)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - HandyJSON
+  - ObjectMapper
+  - Sourcery
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - HandyJSON
+    - ObjectMapper
+    - Sourcery
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Sourcery: 1b6aaad642ab634583a3c568ca4cdb96f6af91f7
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 64407bd274aee7e2c251084e94127d789f905936
+
+COCOAPODS: 1.10.0.rc.1
