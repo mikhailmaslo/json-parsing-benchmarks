@@ -17,21 +17,29 @@ class CanadaTests: XCTestCase {
         _ = data
     }
 
+    func testJSONSerializer() {
+        measure {
+            blackHole(
+                Canada(json: try! JSONSerialization.jsonObject(with: data, options: []) as! SwiftJSON)!
+            )
+        }
+    }
+
     func testCodable() throws {
         measure {
-            blackHole(_ = try! JSONDecoder().decode(canada.self, from: data))
+            blackHole(_ = try! JSONDecoder().decode(Canada.self, from: data))
         }
     }
 
     func testZippy() throws {
         measure {
-            blackHole(_ = try! ZippyJSONDecoder().decode(canada.self, from: data))
+            blackHole(_ = try! ZippyJSONDecoder().decode(Canada.self, from: data))
         }
     }
 
     func testExtras() throws {
         measure {
-            blackHole(_ = try! XJSONDecoder().decode(canada.self, from: data))
+            blackHole(_ = try! XJSONDecoder().decode(Canada.self, from: data))
         }
     }
 

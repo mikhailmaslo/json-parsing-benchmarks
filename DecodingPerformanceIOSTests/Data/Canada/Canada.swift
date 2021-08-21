@@ -7,22 +7,22 @@
 
 import Foundation
 
-struct canada: Codable, Equatable {
+struct Canada: Codable, Equatable {
     let `type`: String
-    let `features`: [features]
+    let `features`: [Features]
 }
 
-struct features: Codable, Equatable {
+struct Features: Codable, Equatable {
     let `type`: String
-    let `properties`: properties
-    let `geometry`: geometry
+    let `properties`: Properties
+    let `geometry`: Geometry
 }
 
-struct geometry: Codable, Equatable {
+struct Geometry: Codable, Equatable {
     let `type`: String
     let `coordinates`: [[[Double]]]
 }
 
-struct properties: Codable, Equatable {
+struct Properties: Codable, Equatable {
     let `name`: String
 }

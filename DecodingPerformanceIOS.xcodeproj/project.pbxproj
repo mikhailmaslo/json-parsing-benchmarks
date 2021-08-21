@@ -27,6 +27,9 @@
 		7DD7867326D12E9000F6D768 /* TwitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7866226D12E9000F6D768 /* TwitterTests.swift */; };
 		7DD7867426D12E9000F6D768 /* GithubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7866326D12E9000F6D768 /* GithubTests.swift */; };
 		7DD7867526D12E9000F6D768 /* ApacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7866426D12E9000F6D768 /* ApacheTests.swift */; };
+		7DE5707226D13EE60050B474 /* Twitter+JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5707126D13EE60050B474 /* Twitter+JSONSerializer.swift */; };
+		7DE5707526D13F060050B474 /* JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5707426D13F060050B474 /* JSONSerializable.swift */; };
+		7DE5707726D13F3E0050B474 /* Canada+JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5707626D13F3E0050B474 /* Canada+JSONSerializable.swift */; };
 		B068118C6B71C21050853FBE /* libPods-DecodingPerformanceIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AF761DE827ED7CEF8830BD /* libPods-DecodingPerformanceIOS.a */; };
 		D021969FC4A48F2F575F38FD /* libPods-DecodingPerformanceIOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5133070B98CEA9C2BB96F8 /* libPods-DecodingPerformanceIOSTests.a */; };
 /* End PBXBuildFile section */
@@ -65,6 +68,9 @@
 		7DD7866226D12E9000F6D768 /* TwitterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTests.swift; sourceTree = "<group>"; };
 		7DD7866326D12E9000F6D768 /* GithubTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubTests.swift; sourceTree = "<group>"; };
 		7DD7866426D12E9000F6D768 /* ApacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApacheTests.swift; sourceTree = "<group>"; };
+		7DE5707126D13EE60050B474 /* Twitter+JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Twitter+JSONSerializer.swift"; sourceTree = "<group>"; };
+		7DE5707426D13F060050B474 /* JSONSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializable.swift; sourceTree = "<group>"; };
+		7DE5707626D13F3E0050B474 /* Canada+JSONSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Canada+JSONSerializable.swift"; sourceTree = "<group>"; };
 		7FFD8D805AA0BAF361AB421D /* Pods-DecodingPerformanceIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformanceIOS.debug.xcconfig"; path = "Target Support Files/Pods-DecodingPerformanceIOS/Pods-DecodingPerformanceIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C5AF761DE827ED7CEF8830BD /* libPods-DecodingPerformanceIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DecodingPerformanceIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7A11ED3E7E1E19B7013AD4 /* Pods-DecodingPerformanceIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformanceIOS.release.xcconfig"; path = "Target Support Files/Pods-DecodingPerformanceIOS/Pods-DecodingPerformanceIOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 		7DD7864F26D12E9000F6D768 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7DE5707326D13EF50050B474 /* Protocols */,
 				7DE78B8C26D13E0200C8A078 /* Canada */,
 				7DD7865026D12E9000F6D768 /* Twitter */,
 				7DD7865826D12E9000F6D768 /* github */,
@@ -169,9 +176,10 @@
 		7DD7865026D12E9000F6D768 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
-				7DD7865126D12E9000F6D768 /* twitter2.json */,
 				7DD7865226D12E9000F6D768 /* Twitter.swift */,
+				7DD7865126D12E9000F6D768 /* twitter2.json */,
 				7DD7865526D12E9000F6D768 /* twitter.json */,
+				7DE5707126D13EE60050B474 /* Twitter+JSONSerializer.swift */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
@@ -206,9 +214,18 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		7DE5707326D13EF50050B474 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7DE5707426D13F060050B474 /* JSONSerializable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		7DE78B8C26D13E0200C8A078 /* Canada */ = {
 			isa = PBXGroup;
 			children = (
+				7DE5707626D13F3E0050B474 /* Canada+JSONSerializable.swift */,
 				7DD7865326D12E9000F6D768 /* Canada.swift */,
 				7DD7865426D12E9000F6D768 /* Canada.json */,
 			);
@@ -394,8 +411,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE5707526D13F060050B474 /* JSONSerializable.swift in Sources */,
 				7DD7866F26D12E9000F6D768 /* apache.swift in Sources */,
+				7DE5707226D13EE60050B474 /* Twitter+JSONSerializer.swift in Sources */,
 				7DD7867126D12E9000F6D768 /* CanadaTests.swift in Sources */,
+				7DE5707726D13F3E0050B474 /* Canada+JSONSerializable.swift in Sources */,
 				7DD7867326D12E9000F6D768 /* TwitterTests.swift in Sources */,
 				7DD7866D26D12E9000F6D768 /* github_events.swift in Sources */,
 				7DD7866626D12E9000F6D768 /* Twitter.swift in Sources */,
