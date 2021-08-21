@@ -158,6 +158,7 @@
 		7DD7864F26D12E9000F6D768 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7DE78B8C26D13E0200C8A078 /* Canada */,
 				7DD7865026D12E9000F6D768 /* Twitter */,
 				7DD7865826D12E9000F6D768 /* github */,
 				7DD7865B26D12E9000F6D768 /* apache */,
@@ -170,8 +171,6 @@
 			children = (
 				7DD7865126D12E9000F6D768 /* twitter2.json */,
 				7DD7865226D12E9000F6D768 /* Twitter.swift */,
-				7DD7865326D12E9000F6D768 /* Canada.swift */,
-				7DD7865426D12E9000F6D768 /* Canada.json */,
 				7DD7865526D12E9000F6D768 /* twitter.json */,
 			);
 			path = Twitter;
@@ -205,6 +204,15 @@
 				7DD7866426D12E9000F6D768 /* ApacheTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		7DE78B8C26D13E0200C8A078 /* Canada */ = {
+			isa = PBXGroup;
+			children = (
+				7DD7865326D12E9000F6D768 /* Canada.swift */,
+				7DD7865426D12E9000F6D768 /* Canada.json */,
+			);
+			path = Canada;
 			sourceTree = "<group>";
 		};
 		E52419151ACC49E9D8191494 /* Frameworks */ = {
