@@ -1,7 +1,7 @@
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
-//   let welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
+//   var welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
 
 //
 // Hashable or Equatable:
@@ -13,21 +13,21 @@ import Foundation
 
 // MARK: - Welcome
 struct ApacheBuilds: Codable, Equatable {
-    let assignedLabels: [OverallLoad]
-    let mode: String
-    let nodeDescription: String
-    let nodeName: String
-    let numExecutors: Int
-    let welcomeDescription: String
-    let jobs: [Job]
-    let overallLoad: OverallLoad
-    let primaryView: View
-    let quietingDown: Bool
-    let slaveAgentPort: Int
-    let unlabeledLoad: OverallLoad
-    let useCrumbs: Bool
-    let useSecurity: Bool
-    let views: [View]
+    var assignedLabels: [OverallLoad]!
+    var mode: String!
+    var nodeDescription: String!
+    var nodeName: String!
+    var numExecutors: Int!
+    var welcomeDescription: String!
+    var jobs: [Job]!
+    var overallLoad: OverallLoad!
+    var primaryView: View!
+    var quietingDown: Bool!
+    var slaveAgentPort: Int!
+    var unlabeledLoad: OverallLoad!
+    var useCrumbs: Bool!
+    var useSecurity: Bool!
+    var views: [View]!
 
     enum CodingKeys: String, CodingKey {
         case assignedLabels = "assignedLabels"
@@ -66,9 +66,9 @@ struct OverallLoad: Codable, Equatable {
 
 // MARK: - Job
 struct Job: Codable, Equatable {
-    let name: String
-    let url: String
-    let color: String
+    var name: String!
+    var url: String!
+    var color: String!
 
     enum CodingKeys: String, CodingKey {
         case name = "name"
@@ -85,8 +85,8 @@ struct Job: Codable, Equatable {
 
 // MARK: - View
 struct View: Codable, Equatable {
-    let name: String
-    let url: String
+    var name: String!
+    var url: String!
 
     enum CodingKeys: String, CodingKey {
         case name = "name"

@@ -13,12 +13,21 @@ import ZippyJSON
 import ExtrasJSON
 import ObjectMapper
 import SwiftyJSON
+import HandyJSON
 
 class Twitter2Tests: XCTestCase {
     private lazy var data = dataFromFile("twitter2.json")
 
     override func setUp() {
         _ = data
+    }
+
+    func testHandyJSON() throws {
+        measure {
+            blackHole(
+                Twitter.deserialize(from: String(data: data, encoding: .utf8))!
+            )
+        }
     }
 
     func testSwiftyJSON() throws {

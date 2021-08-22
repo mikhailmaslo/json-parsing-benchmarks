@@ -11,12 +11,21 @@ import ZippyJSON
 import ExtrasJSON
 import ObjectMapper
 import SwiftyJSON
+import HandyJSON
 
 class GithubTests: XCTestCase {
     private lazy var data = dataFromFile("github_events.json")
 
     override func setUp() {
         _ = data
+    }
+
+    func testHandyJSON() throws {
+        measure {
+            blackHole(
+                [ghWelcomeElement].deserialize(from: String(data: data, encoding: .utf8))!
+            )
+        }
     }
 
     func testSwiftyJSON() throws {

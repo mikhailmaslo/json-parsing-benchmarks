@@ -8,8 +8,8 @@
 import Foundation
 
 struct Twitter: Codable, Equatable {
-    let statuses: [Status]
-    let searchMetadata: SearchMetadata
+    var statuses: [Status]!
+    var searchMetadata: SearchMetadata!
 
     enum CodingKeys: String, CodingKey {
         case statuses = "statuses"
@@ -24,15 +24,15 @@ struct Twitter: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - SearchMetadata
 struct SearchMetadata: Codable, Equatable {
-    let completedIn: Double
-    let maxid: Double
-    let maxidStr: String
-    let nextResults: String
-    let query: String
-    let refreshurl: String
-    let count: Int
-    let sinceid: Int
-    let sinceidStr: String
+    var completedIn: Double!
+    var maxid: Double!
+    var maxidStr: String!
+    var nextResults: String!
+    var query: String!
+    var refreshurl: String!
+    var count: Int!
+    var sinceid: Int!
+    var sinceidStr: String!
 
     enum CodingKeys: String, CodingKey {
         case completedIn = "completed_in"
@@ -54,31 +54,31 @@ struct SearchMetadata: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - Status
 struct Status: Codable, Equatable {
-    let metadata: Metadata
-    let createdAt: String
-    let id: Double
-    let idStr: String
-    let text: String
-    let source: String
-    let truncated: Bool
-    let inReplyToStatusid: Double?
-    let inReplyToStatusidStr: String?
-    let inReplyToUserid: Int?
-    let inReplyToUseridStr: String?
-    let inReplyToScreenName: String?
-    let user: User
-    //let geo: NSNull?
-    // let coordinates: NSNull?
-    // let place: NSNull?
-    // let contributors: NSNull?
-    let retweetCount: Int
-    let favoriteCount: Int
-    let entities: StatusEntities
-    let favorited: Bool
-    let retweeted: Bool
-    let lang: String
-    // let retweetedStatus: Status?
-    let possiblySensitive: Bool?
+    var metadata: Metadata!
+    var createdAt: String!
+    var id: Double!
+    var idStr: String!
+    var text: String!
+    var source: String!
+    var truncated: Bool!
+    var inReplyToStatusid: Double?
+    var inReplyToStatusidStr: String?
+    var inReplyToUserid: Int?
+    var inReplyToUseridStr: String?
+    var inReplyToScreenName: String?
+    var user: User!
+    //var geo: NSNull?
+    // var coordinates: NSNull?
+    // var place: NSNull?
+    // var contributors: NSNull?
+    var retweetCount: Int!
+    var favoriteCount: Int!
+    var entities: StatusEntities!
+    var favorited: Bool!
+    var retweeted: Bool!
+    var lang: String!
+    // var retweetedStatus: Status?
+    var possiblySensitive: Bool?
 
     enum CodingKeys: String, CodingKey {
         case metadata = "metadata"
@@ -116,11 +116,11 @@ struct Status: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - StatusEntities
 struct StatusEntities: Codable, Equatable {
-    let hashtags: [Hashtag]
-    // let symbols: NSNull
-    let urls: [URLElement]
-    let userMentions: [UserMention]
-    let media: [Media]?
+    var hashtags: [Hashtag]!
+    // var symbols: NSNull
+    var urls: [URLElement]!
+    var userMentions: [UserMention]!
+    var media: [Media]?
 
     enum CodingKeys: String, CodingKey {
         case hashtags = "hashtags"
@@ -138,8 +138,8 @@ struct StatusEntities: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - Hashtag
 struct Hashtag: Codable, Equatable {
-    let text: String
-    let indices: [Int]
+    var text: String!
+    var indices: [Int]!
 
     enum CodingKeys: String, CodingKey {
         case text = "text"
@@ -154,18 +154,18 @@ struct Hashtag: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - Media
 struct Media: Codable, Equatable {
-    let id: Double
-    let idStr: String
-    let indices: [Int]
-    let mediaurl: String
-    let mediaurlhttps: String
-    let url: String
-    let displayurl: String
-    let expandedurl: String
-    let type: String
-    let sizes: Sizes
-    let sourceStatusid: Double?
-    let sourceStatusidStr: String?
+    var id: Double!
+    var idStr: String!
+    var indices: [Int]!
+    var mediaurl: String!
+    var mediaurlhttps: String!
+    var url: String!
+    var displayurl: String!
+    var expandedurl: String!
+    var type: String!
+    var sizes: Sizes!
+    var sourceStatusid: Double?
+    var sourceStatusidStr: String?
 
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -190,10 +190,10 @@ struct Media: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - Sizes
 struct Sizes: Codable, Equatable {
-    let medium: Large
-    let small: Large
-    let thumb: Large
-    let large: Large
+    var medium: Large!
+    var small: Large!
+    var thumb: Large!
+    var large: Large!
 
     enum CodingKeys: String, CodingKey {
         case medium = "medium"
@@ -210,9 +210,9 @@ struct Sizes: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - Large
 struct Large: Codable, Equatable {
-    let w: Int
-    let h: Int
-    let resize: String
+    var w: Int!
+    var h: Int!
+    var resize: String!
 
     enum CodingKeys: String, CodingKey {
         case w = "w"
@@ -228,10 +228,10 @@ struct Large: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - URLElement
 struct URLElement: Codable, Equatable {
-    let url: String
-    let expandedurl: String
-    let displayurl: String
-    let indices: [Int]
+    var url: String!
+    var expandedurl: String!
+    var displayurl: String!
+    var indices: [Int]!
 
     enum CodingKeys: String, CodingKey {
         case url = "url"
@@ -248,11 +248,11 @@ struct URLElement: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - UserMention
 struct UserMention: Codable, Equatable {
-    let screenName: String
-    let name: String
-    let id: Int
-    let idStr: String
-    let indices: [Int]
+    var screenName: String!
+    var name: String!
+    var id: Int!
+    var idStr: String!
+    var indices: [Int]!
 
     enum CodingKeys: String, CodingKey {
         case screenName = "screen_name"
@@ -270,8 +270,8 @@ struct UserMention: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - Metadata
 struct Metadata: Codable, Equatable {
-    let resultType: String
-    let isoLanguageCode: String
+    var resultType: String!
+    var isoLanguageCode: String!
 
     enum CodingKeys: String, CodingKey {
         case resultType = "result_type"
@@ -286,46 +286,46 @@ struct Metadata: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - User
 struct User: Codable, Equatable {
-    let id: Int
-    let idStr: String
-    let name: String
-    let screenName: String
-    let location: String
-    let userDescription: String
-    let url: String?
-    let entities: UserEntities
-    let protected: Bool
-    let followersCount: Int
-    let friendsCount: Int
-    let listedCount: Int
-    let createdAt: String
-    let favouritesCount: Int
-    let utcOffset: Int?
-    let timeZone: String?
-    let geoEnabled: Bool
-    let verified: Bool
-    let statusesCount: Int
-    let lang: String
-    let contributorsEnabled: Bool
-    let isTranslator: Bool
-    let isTranslationEnabled: Bool
-    let profileBackgroundColor: String
-    let profileBackgroundImageurl: String
-    let profileBackgroundImageurlhttps: String
-    let profileBackgroundTile: Bool
-    let profileImageurl: String
-    let profileImageurlhttps: String
-    let profileBannerurl: String?
-    let profileLinkColor: String
-    let profileSidebarBorderColor: String
-    let profileSidebarFillColor: String
-    let profileTextColor: String
-    let profileUseBackgroundImage: Bool
-    let defaultProfile: Bool
-    let defaultProfileImage: Bool
-    let following: Bool
-    let followRequestSent: Bool
-    let notifications: Bool
+    var id: Int!
+    var idStr: String!
+    var name: String!
+    var screenName: String!
+    var location: String!
+    var userDescription: String!
+    var url: String?
+    var entities: UserEntities!
+    var protected: Bool!
+    var followersCount: Int!
+    var friendsCount: Int!
+    var listedCount: Int!
+    var createdAt: String!
+    var favouritesCount: Int!
+    var utcOffset: Int?
+    var timeZone: String?
+    var geoEnabled: Bool!
+    var verified: Bool!
+    var statusesCount: Int!
+    var lang: String!
+    var contributorsEnabled: Bool!
+    var isTranslator: Bool!
+    var isTranslationEnabled: Bool!
+    var profileBackgroundColor: String!
+    var profileBackgroundImageurl: String!
+    var profileBackgroundImageurlhttps: String!
+    var profileBackgroundTile: Bool!
+    var profileImageurl: String!
+    var profileImageurlhttps: String!
+    var profileBannerurl: String?
+    var profileLinkColor: String!
+    var profileSidebarBorderColor: String!
+    var profileSidebarFillColor: String!
+    var profileTextColor: String!
+    var profileUseBackgroundImage: Bool!
+    var defaultProfile: Bool!
+    var defaultProfileImage: Bool!
+    var following: Bool!
+    var followRequestSent: Bool!
+    var notifications: Bool!
 
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -378,8 +378,8 @@ struct User: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - UserEntities
 struct UserEntities: Codable, Equatable {
-    let entitiesDescription: Description
-    let url: Description?
+    var entitiesDescription: Description!
+    var url: Description?
 
     enum CodingKeys: String, CodingKey {
         case entitiesDescription = "description"
@@ -394,7 +394,7 @@ struct UserEntities: Codable, Equatable {
 // synthesized for types that have collections (such as arrays or dictionaries).
 // MARK: - Description
 struct Description: Codable, Equatable {
-    let urls: [URLElement]
+    var urls: [URLElement]!
 
     enum CodingKeys: String, CodingKey {
         case urls = "urls"

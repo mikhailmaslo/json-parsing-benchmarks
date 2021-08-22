@@ -11,6 +11,7 @@ import ZippyJSON
 import ExtrasJSON
 import ObjectMapper
 import SwiftyJSON
+import HandyJSON
 
 class CanadaTests: XCTestCase {
     private lazy var data = dataFromFile("Canada.json")
@@ -19,10 +20,18 @@ class CanadaTests: XCTestCase {
         _ = data
     }
 
+    func testHandyJSON() throws {
+        measure {
+            blackHole(
+                Canada.deserialize(from: String(data: data, encoding: .utf8))!
+            )
+        }
+    }
+
     func testSwiftyJSON() throws {
         measure {
             blackHole(
-                Canada(swiftyJSON: JSON(try! JSONSerialization.jsonObject(with: data, options: []) as! SwiftJSON))
+                Canada(swiftyJSON: JSON(try! JSONSerialization.jsonObject(with: data, options: []) as! SwiftJSON))!
             )
         }
     }

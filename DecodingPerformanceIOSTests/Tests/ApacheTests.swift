@@ -12,11 +12,24 @@ import ExtrasJSON
 import ObjectMapper
 import SwiftyJSON
 
+
 class ApacheTests: XCTestCase {
     private lazy var data = dataFromFile("apache.json")
 
     override func setUp() {
         _ = data
+    }
+
+    struct TestInit {
+        var s: Int!
+    }
+
+    func testHandyJSON() throws {
+        measure {
+            blackHole(
+                ApacheBuilds.deserialize(from: String(data: data, encoding: .utf8))!
+            )
+        }
     }
 
     func testSwiftyJSON() throws {

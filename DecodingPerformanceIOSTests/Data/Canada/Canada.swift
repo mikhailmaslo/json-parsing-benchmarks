@@ -8,8 +8,8 @@
 import Foundation
 
 struct Canada: Codable, Equatable {
-    let `type`: String
-    let `features`: [Features]
+    var `type`: String!
+    var `features`: [Features]!
 
     enum CodingKeys: String, CodingKey {
         case type, features
@@ -17,9 +17,9 @@ struct Canada: Codable, Equatable {
 }
 
 struct Features: Codable, Equatable {
-    let `type`: String
-    let `properties`: Properties
-    let `geometry`: Geometry
+    var `type`: String!
+    var `properties`: Properties!
+    var `geometry`: Geometry!
 
     enum CodingKeys: String, CodingKey {
         case type, properties, geometry
@@ -27,8 +27,8 @@ struct Features: Codable, Equatable {
 }
 
 struct Geometry: Codable, Equatable {
-    let `type`: String
-    let `coordinates`: [[[Double]]]
+    var `type`: String!
+    var `coordinates`: [[[Double]]]!
 
     enum CodingKeys: String, CodingKey {
         case type, coordinates
@@ -36,7 +36,7 @@ struct Geometry: Codable, Equatable {
 }
 
 struct Properties: Codable, Equatable {
-    let `name`: String
+    var `name`: String!
 
     enum CodingKeys: String, CodingKey {
         case name

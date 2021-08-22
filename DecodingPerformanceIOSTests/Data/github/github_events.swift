@@ -1,7 +1,7 @@
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
-//   let ghWelcome = try? newJSONDecoder().decode(ghWelcome.self, from: jsonData)
+//   var ghWelcome = try? newJSONDecoder().decode(ghWelcome.self, from: jsonData)
 
 //
 // Hashable or Equatable:
@@ -13,14 +13,14 @@ import Foundation
 
 // MARK: - ghWelcomeElement
 struct ghWelcomeElement: Codable, Equatable {
-    let type: String
-    let createdAt: Date
-    let actor: ghActor
-    let repo: ghRepo
-    let welcomePublic: Bool
-    let payload: ghPayload
-    let id: String
-    let org: ghActor?
+    var type: String!
+    var createdAt: Date!
+    var actor: ghActor!
+    var repo: ghRepo!
+    var welcomePublic: Bool!
+    var payload: ghPayload!
+    var id: String!
+    var org: ghActor?
 
     enum CodingKeys: String, CodingKey {
         case type = "type"
@@ -42,11 +42,11 @@ struct ghWelcomeElement: Codable, Equatable {
 
 // MARK: - ghActor
 struct ghActor: Codable, Equatable {
-    let gravatarid: String
-    let login: String
-    let avatarurl: String
-    let url: String
-    let id: Int
+    var gravatarid: String!
+    var login: String!
+    var avatarurl: String!
+    var url: String!
+    var id: Int!
 
     enum CodingKeys: String, CodingKey {
         case gravatarid = "gravatar_id"
@@ -65,21 +65,21 @@ struct ghActor: Codable, Equatable {
 
 // MARK: - ghPayload
 struct ghPayload: Codable, Equatable {
-    let commits: [ghCommit]?
-    let distinctSize: Int?
-    let ref: String?
-    let pushid: Int?
-    let head: String?
-    let before: String?
-    let size: Int?
-    let payloadDescription: String?
-    let masterBranch: String?
-    let refType: String?
-    let forkee: ghForkee?
-    let action: String?
-    let issue: ghIssue?
-    let comment: ghComment?
-    let pages: [ghPage]?
+    var commits: [ghCommit]?
+    var distinctSize: Int?
+    var ref: String?
+    var pushid: Int?
+    var head: String?
+    var before: String?
+    var size: Int?
+    var payloadDescription: String?
+    var masterBranch: String?
+    var refType: String?
+    var forkee: ghForkee?
+    var action: String?
+    var issue: ghIssue?
+    var comment: ghComment?
+    var pages: [ghPage]?
 
     enum CodingKeys: String, CodingKey {
         case commits = "commits"
@@ -108,13 +108,13 @@ struct ghPayload: Codable, Equatable {
 
 // MARK: - ghComment
 struct ghComment: Codable, Equatable {
-    let user: ghUser
-    let url: String
-    let issueurl: String
-    let createdAt: Date
-    let body: String
-    let updatedAt: Date
-    let id: Int
+    var user: ghUser!
+    var url: String!
+    var issueurl: String!
+    var createdAt: Date!
+    var body: String!
+    var updatedAt: Date!
+    var id: Int!
 
     enum CodingKeys: String, CodingKey {
         case user = "user"
@@ -135,21 +135,21 @@ struct ghComment: Codable, Equatable {
 
 // MARK: - ghUser
 struct ghUser: Codable, Equatable {
-    let url: String
-    let gistsurl: String
-    let gravatarid: String
-    let type: String
-    let avatarurl: String
-    let subscriptionsurl: String
-    let organizationsurl: String
-    let receivedEventsurl: String
-    let reposurl: String
-    let login: String
-    let id: Int
-    let starredurl: String
-    let eventsurl: String
-    let followersurl: String
-    let followingurl: String
+    var url: String!
+    var gistsurl: String!
+    var gravatarid: String!
+    var type: String!
+    var avatarurl: String!
+    var subscriptionsurl: String!
+    var organizationsurl: String!
+    var receivedEventsurl: String!
+    var reposurl: String!
+    var login: String!
+    var id: Int!
+    var starredurl: String!
+    var eventsurl: String!
+    var followersurl: String!
+    var followingurl: String!
 
     enum CodingKeys: String, CodingKey {
         case url = "url"
@@ -178,11 +178,11 @@ struct ghUser: Codable, Equatable {
 
 // MARK: - ghCommit
 struct ghCommit: Codable, Equatable {
-    let url: String
-    let message: String
-    let distinct: Bool
-    let sha: String
-    let author: ghAuthor
+    var url: String!
+    var message: String!
+    var distinct: Bool!
+    var sha: String!
+    var author: ghAuthor!
 
     enum CodingKeys: String, CodingKey {
         case url = "url"
@@ -201,8 +201,8 @@ struct ghCommit: Codable, Equatable {
 
 // MARK: - ghAuthor
 struct ghAuthor: Codable, Equatable {
-    let email: String
-    let name: String
+    var email: String!
+    var name: String!
 
     enum CodingKeys: String, CodingKey {
         case email = "email"
@@ -218,70 +218,70 @@ struct ghAuthor: Codable, Equatable {
 
 // MARK: - ghForkee
 struct ghForkee: Codable, Equatable {
-    let forkeeDescription: String
-    let fork: Bool
-    let url: String
-    let language: String
-    let stargazersurl: String
-    let cloneurl: String
-    let tagsurl: String
-    let fullName: String
-    let mergesurl: String
-    let forks: Int
-    let forkeePrivate: Bool
-    let gitRefsurl: String
-    let archiveurl: String
-    let collaboratorsurl: String
-    let owner: ghUser
-    let languagesurl: String
-    let treesurl: String
-    let labelsurl: String
-    let htmlurl: String
-    let pushedAt: Date
-    let createdAt: Date
-    let hasIssues: Bool
-    let forksurl: String
-    let branchesurl: String
-    let commitsurl: String
-    let notificationsurl: String
-    let openIssues: Int
-    let contentsurl: String
-    let blobsurl: String
-    let issuesurl: String
-    let compareurl: String
-    let issueEventsurl: String
-    let name: String
-    let updatedAt: Date
-    let statusesurl: String
-    let forksCount: Int
-    let assigneesurl: String
-    let sshurl: String
-    let forkeePublic: Bool
-    let hasWiki: Bool
-    let subscribersurl: String
-    // let mirrorurl: JSONNull?
-    let watchersCount: Int
-    let id: Int
-    let hasDownloads: Bool
-    let gitCommitsurl: String
-    let downloadsurl: String
-    let pullsurl: String
-    let homepage: String?
-    let issueCommenturl: String
-    let hooksurl: String
-    let subscriptionurl: String
-    let milestonesurl: String
-    let svnurl: String
-    let eventsurl: String
-    let gitTagsurl: String
-    let teamsurl: String
-    let commentsurl: String
-    let openIssuesCount: Int
-    let keysurl: String
-    let giturl: String
-    let contributorsurl: String
-    let size: Int
-    let watchers: Int
+    var forkeeDescription: String!
+    var fork: Bool!
+    var url: String!
+    var language: String!
+    var stargazersurl: String!
+    var cloneurl: String!
+    var tagsurl: String!
+    var fullName: String!
+    var mergesurl: String!
+    var forks: Int!
+    var forkeePrivate: Bool!
+    var gitRefsurl: String!
+    var archiveurl: String!
+    var collaboratorsurl: String!
+    var owner: ghUser!
+    var languagesurl: String!
+    var treesurl: String!
+    var labelsurl: String!
+    var htmlurl: String!
+    var pushedAt: Date!
+    var createdAt: Date!
+    var hasIssues: Bool!
+    var forksurl: String!
+    var branchesurl: String!
+    var commitsurl: String!
+    var notificationsurl: String!
+    var openIssues: Int!
+    var contentsurl: String!
+    var blobsurl: String!
+    var issuesurl: String!
+    var compareurl: String!
+    var issueEventsurl: String!
+    var name: String!
+    var updatedAt: Date!
+    var statusesurl: String!
+    var forksCount: Int!
+    var assigneesurl: String!
+    var sshurl: String!
+    var forkeePublic: Bool!
+    var hasWiki: Bool!
+    var subscribersurl: String!
+    // var mirrorurl: JSONNull?
+    var watchersCount: Int!
+    var id: Int!
+    var hasDownloads: Bool!
+    var gitCommitsurl: String!
+    var downloadsurl: String!
+    var pullsurl: String!
+    var homepage: String?
+    var issueCommenturl: String!
+    var hooksurl: String!
+    var subscriptionurl: String!
+    var milestonesurl: String!
+    var svnurl: String!
+    var eventsurl: String!
+    var gitTagsurl: String!
+    var teamsurl: String!
+    var commentsurl: String!
+    var openIssuesCount: Int!
+    var keysurl: String!
+    var giturl: String!
+    var contributorsurl: String!
+    var size: Int!
+    var watchers: Int!
 
     enum CodingKeys: String, CodingKey {
         case forkeeDescription = "description"
@@ -359,25 +359,25 @@ struct ghForkee: Codable, Equatable {
 
 // MARK: - ghIssue
 struct ghIssue: Codable, Equatable {
-    let user: ghUser
-    let url: String
-    let labels: [Int]
-    let htmlurl: String
-    let labelsurl: String
-    let pullRequest: ghPullRequest
-    let createdAt: Date
-    let closedAt: Date?
-    // let milestone: JSONNull?
-    let title: String
-    let body: String
-    let updatedAt: Date
-    let number: Int
-    let state: String
-    let assignee: ghUser?
-    let id: Int
-    let eventsurl: String
-    let commentsurl: String
-    let comments: Int
+    var user: ghUser!
+    var url: String!
+    var labels: [Int]!
+    var htmlurl: String!
+    var labelsurl: String!
+    var pullRequest: ghPullRequest!
+    var createdAt: Date!
+    var closedAt: Date?
+    // var milestone: JSONNull?
+    var title: String!
+    var body: String!
+    var updatedAt: Date!
+    var number: Int!
+    var state: String!
+    var assignee: ghUser?
+    var id: Int!
+    var eventsurl: String!
+    var commentsurl: String!
+    var comments: Int!
 
     enum CodingKeys: String, CodingKey {
         case user = "user"
@@ -410,9 +410,9 @@ struct ghIssue: Codable, Equatable {
 
 // MARK: - ghPullRequest
 struct ghPullRequest: Codable, Equatable {
-    /*let htmlurl: JSONNull?
-    let patchurl: JSONNull?
-    let diffurl: JSONNull?
+    /*var htmlurl: JSONNull?
+    var patchurl: JSONNull?
+    var diffurl: JSONNull?
 
     enum CodingKeys: String, CodingKey {
         case htmlurl = "html_url"
@@ -429,12 +429,12 @@ struct ghPullRequest: Codable, Equatable {
 
 // MARK: - ghPage
 struct ghPage: Codable, Equatable {
-    let pageName: String
-    let htmlurl: String
-    let title: String
-    let sha: String
-    // let summary: JSONNull?
-    let action: String
+    var pageName: String!
+    var htmlurl: String!
+    var title: String!
+    var sha: String!
+    // var summary: JSONNull?
+    var action: String!
 
     enum CodingKeys: String, CodingKey {
         case pageName = "page_name"
@@ -454,9 +454,9 @@ struct ghPage: Codable, Equatable {
 
 // MARK: - ghRepo
 struct ghRepo: Codable, Equatable {
-    let url: String
-    let id: Int
-    let name: String
+    var url: String!
+    var id: Int!
+    var name: String!
 
     enum CodingKeys: String, CodingKey {
         case url = "url"

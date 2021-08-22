@@ -1,0 +1,16 @@
+// MARK: - JSONSerializable
+
+import Foundation
+import HandyJSON
+
+{% for model in types.based.AutoHandyJSONable|struct %}
+extension {{model.name}}: HandyJSON {
+    mutating func mapping(mapper: HelpingMapper) {
+        {% for variable in model.storedVariables %}
+        mapper <<<
+            self.{{variable.name}} <-- CodingKeys.{{variable.name}}.rawValue
+        {% endfor %}
+    }
+}
+
+{% endfor %}
