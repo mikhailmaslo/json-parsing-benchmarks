@@ -11,6 +11,12 @@
 		7D1B8DE226D2611300BD5B71 /* github_events+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DE126D2611300BD5B71 /* github_events+ObjectMapper.swift */; };
 		7D1B8DE526D2681300BD5B71 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DE426D2681300BD5B71 /* DateFormatterTransform.swift */; };
 		7D1B8DE726D269FD00BD5B71 /* apache+ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DE626D269FD00BD5B71 /* apache+ImmutableMappable.swift */; };
+		7D1B8DEA26D278CD00BD5B71 /* AutoSwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DE926D278CD00BD5B71 /* AutoSwiftyJSON.swift */; };
+		7D1B8DEC26D2795800BD5B71 /* Canada+SwiftyJSONable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DEB26D2795800BD5B71 /* Canada+SwiftyJSONable.swift */; };
+		7D1B8DEE26D2799400BD5B71 /* AutoSwiftyJSONable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DED26D2799400BD5B71 /* AutoSwiftyJSONable.generated.swift */; };
+		7D1B8DF026D281C200BD5B71 /* Twitter+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DEF26D281C200BD5B71 /* Twitter+SwiftyJSON.swift */; };
+		7D1B8DF226D2842500BD5B71 /* github_events+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DF126D2842500BD5B71 /* github_events+SwiftyJSON.swift */; };
+		7D1B8DF426D285BA00BD5B71 /* apache+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DF326D285BA00BD5B71 /* apache+SwiftyJSON.swift */; };
 		7D67BB8326D12C5100E883D8 /* DecodingPerformanceIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67BB8226D12C5100E883D8 /* DecodingPerformanceIOSApp.swift */; };
 		7D67BB8526D12C5100E883D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67BB8426D12C5100E883D8 /* ContentView.swift */; };
 		7D67BB8726D12C5300E883D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D67BB8626D12C5300E883D8 /* Assets.xcassets */; };
@@ -61,6 +67,13 @@
 		7D1B8DE126D2611300BD5B71 /* github_events+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "github_events+ObjectMapper.swift"; sourceTree = "<group>"; };
 		7D1B8DE426D2681300BD5B71 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
 		7D1B8DE626D269FD00BD5B71 /* apache+ImmutableMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "apache+ImmutableMappable.swift"; sourceTree = "<group>"; };
+		7D1B8DE826D277CE00BD5B71 /* AutoSwiftyJSONable.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoSwiftyJSONable.stencil; sourceTree = "<group>"; };
+		7D1B8DE926D278CD00BD5B71 /* AutoSwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSwiftyJSON.swift; sourceTree = "<group>"; };
+		7D1B8DEB26D2795800BD5B71 /* Canada+SwiftyJSONable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Canada+SwiftyJSONable.swift"; sourceTree = "<group>"; };
+		7D1B8DED26D2799400BD5B71 /* AutoSwiftyJSONable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSwiftyJSONable.generated.swift; sourceTree = "<group>"; };
+		7D1B8DEF26D281C200BD5B71 /* Twitter+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Twitter+SwiftyJSON.swift"; sourceTree = "<group>"; };
+		7D1B8DF126D2842500BD5B71 /* github_events+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "github_events+SwiftyJSON.swift"; sourceTree = "<group>"; };
+		7D1B8DF326D285BA00BD5B71 /* apache+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "apache+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		7D67BB7F26D12C5100E883D8 /* DecodingPerformanceIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecodingPerformanceIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D67BB8226D12C5100E883D8 /* DecodingPerformanceIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingPerformanceIOSApp.swift; sourceTree = "<group>"; };
 		7D67BB8426D12C5100E883D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -214,6 +227,7 @@
 			children = (
 				7DD7865226D12E9000F6D768 /* Twitter.swift */,
 				7D1B8DDF26D25E7100BD5B71 /* Twitter+ImmutableMappable.swift */,
+				7D1B8DEF26D281C200BD5B71 /* Twitter+SwiftyJSON.swift */,
 				7DE5707826D144610050B474 /* Twitter+JSONSerializable.swift */,
 				7DD7865126D12E9000F6D768 /* twitter2.json */,
 				7DD7865526D12E9000F6D768 /* twitter.json */,
@@ -227,6 +241,7 @@
 				7DD7865926D12E9000F6D768 /* github_events.json */,
 				7DE5708626D151500050B474 /* github_events+JSONSerialaizable.swift */,
 				7D1B8DE126D2611300BD5B71 /* github_events+ObjectMapper.swift */,
+				7D1B8DF126D2842500BD5B71 /* github_events+SwiftyJSON.swift */,
 				7DD7865A26D12E9000F6D768 /* github_events.swift */,
 			);
 			path = github;
@@ -237,6 +252,7 @@
 			children = (
 				7DD7865C26D12E9000F6D768 /* apache.json */,
 				7DE5708826D257FD0050B474 /* apache+JSONSerializer.swift */,
+				7D1B8DF326D285BA00BD5B71 /* apache+SwiftyJSON.swift */,
 				7D1B8DE626D269FD00BD5B71 /* apache+ImmutableMappable.swift */,
 				7DD7865D26D12E9000F6D768 /* apache.swift */,
 			);
@@ -246,11 +262,11 @@
 		7DD7865E26D12E9000F6D768 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				7DD7865F26D12E9000F6D768 /* Twitter2Tests.swift */,
-				7DD7866026D12E9000F6D768 /* CanadaTests.swift */,
-				7DD7866226D12E9000F6D768 /* TwitterTests.swift */,
-				7DD7866326D12E9000F6D768 /* GithubTests.swift */,
 				7DD7866426D12E9000F6D768 /* ApacheTests.swift */,
+				7DD7866026D12E9000F6D768 /* CanadaTests.swift */,
+				7DD7866326D12E9000F6D768 /* GithubTests.swift */,
+				7DD7865F26D12E9000F6D768 /* Twitter2Tests.swift */,
+				7DD7866226D12E9000F6D768 /* TwitterTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -274,8 +290,10 @@
 		7DE5707D26D1482F0050B474 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				7D1B8DED26D2799400BD5B71 /* AutoSwiftyJSONable.generated.swift */,
 				7DE5708D26D25D310050B474 /* AutoImmutableMappable.generated.swift */,
 				7DE5708426D14A690050B474 /* JSONSerializable.generated.swift */,
+				7D1B8DE926D278CD00BD5B71 /* AutoSwiftyJSON.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -285,6 +303,7 @@
 			children = (
 				7DE5707F26D1487A0050B474 /* AnyCodable.swift */,
 				7DE5708C26D25B430050B474 /* AutoImmutableMappable.stencil */,
+				7D1B8DE826D277CE00BD5B71 /* AutoSwiftyJSONable.stencil */,
 				7DE5708326D148800050B474 /* JSONSerializable.stencil */,
 			);
 			path = Templates;
@@ -295,6 +314,7 @@
 			children = (
 				7DE5707626D13F3E0050B474 /* Canada+JSONSerializable.swift */,
 				7DD7865326D12E9000F6D768 /* Canada.swift */,
+				7D1B8DEB26D2795800BD5B71 /* Canada+SwiftyJSONable.swift */,
 				7DE5708F26D25D410050B474 /* Canada+ImmutableMappable.swift */,
 				7DD7865426D12E9000F6D768 /* Canada.json */,
 			);
@@ -502,11 +522,15 @@
 				7DE5708526D14A690050B474 /* JSONSerializable.generated.swift in Sources */,
 				7DE5707526D13F060050B474 /* JSONSerializable.swift in Sources */,
 				7DE5708126D1487A0050B474 /* AnyCodable.swift in Sources */,
+				7D1B8DEE26D2799400BD5B71 /* AutoSwiftyJSONable.generated.swift in Sources */,
 				7DD7866F26D12E9000F6D768 /* apache.swift in Sources */,
+				7D1B8DF226D2842500BD5B71 /* github_events+SwiftyJSON.swift in Sources */,
 				7D1B8DE726D269FD00BD5B71 /* apache+ImmutableMappable.swift in Sources */,
 				7DE5709026D25D410050B474 /* Canada+ImmutableMappable.swift in Sources */,
 				7D1B8DE526D2681300BD5B71 /* DateFormatterTransform.swift in Sources */,
 				7DD7867126D12E9000F6D768 /* CanadaTests.swift in Sources */,
+				7D1B8DEC26D2795800BD5B71 /* Canada+SwiftyJSONable.swift in Sources */,
+				7D1B8DEA26D278CD00BD5B71 /* AutoSwiftyJSON.swift in Sources */,
 				7DE5707726D13F3E0050B474 /* Canada+JSONSerializable.swift in Sources */,
 				7DD7867326D12E9000F6D768 /* TwitterTests.swift in Sources */,
 				7DE5707926D144610050B474 /* Twitter+JSONSerializable.swift in Sources */,
@@ -521,7 +545,9 @@
 				7DD7867426D12E9000F6D768 /* GithubTests.swift in Sources */,
 				7DD7866726D12E9000F6D768 /* Canada.swift in Sources */,
 				7DE5708B26D25AD20050B474 /* AutoImmutableMappable.swift in Sources */,
+				7D1B8DF426D285BA00BD5B71 /* apache+SwiftyJSON.swift in Sources */,
 				7D1B8DE026D25E7100BD5B71 /* Twitter+ImmutableMappable.swift in Sources */,
+				7D1B8DF026D281C200BD5B71 /* Twitter+SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

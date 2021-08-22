@@ -10,12 +10,21 @@ import Foundation
 import ZippyJSON
 import ExtrasJSON
 import ObjectMapper
+import SwiftyJSON
 
 class CanadaTests: XCTestCase {
     private lazy var data = dataFromFile("Canada.json")
 
     override func setUp() {
         _ = data
+    }
+
+    func testSwiftyJSON() throws {
+        measure {
+            blackHole(
+                Canada(swiftyJSON: JSON(try! JSONSerialization.jsonObject(with: data, options: []) as! SwiftJSON))
+            )
+        }
     }
 
     func testObjectMapper() throws {

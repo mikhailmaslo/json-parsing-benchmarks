@@ -10,12 +10,23 @@ import Foundation
 import ZippyJSON
 import ExtrasJSON
 import ObjectMapper
+import SwiftyJSON
 
 class GithubTests: XCTestCase {
     private lazy var data = dataFromFile("github_events.json")
 
     override func setUp() {
         _ = data
+    }
+
+    func testSwiftyJSON() throws {
+        measure {
+            blackHole(
+                (try! JSONSerialization.jsonObject(with: data, options: []) as! [SwiftJSON]).map { json in
+                    ghWelcomeElement(swiftyJSON: JSON(json))!
+                }
+            )
+        }
     }
 
     func testObjectMapper() throws {

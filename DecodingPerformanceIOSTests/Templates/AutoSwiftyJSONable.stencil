@@ -1,0 +1,15 @@
+// MARK: - JSONSerializable
+
+import Foundation
+import SwiftyJSON
+
+{% for model in types.based.AutoSwiftyJSON|struct %}
+extension {{model.name}}: SwiftyJSONable {
+    init?(swiftyJSON: JSON) {
+{% for variable in model.storedVariables %}
+        self.{{variable.name}} = swiftyJSON[CodingKeys.{{variable.name}}.rawValue].{{variable.typeName | replace:"?","" | lowercase }}{% if not variable.isOptional %}!{% endif %}
+{% endfor %}
+    }
+}
+
+{% endfor %}

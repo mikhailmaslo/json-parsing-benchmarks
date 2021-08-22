@@ -39,15 +39,8 @@ extension Features: JSONSerializable {
 
 extension Geometry: JSONSerializable {
     init?(json: SwiftJSON) {
-        guard
-            let type = json["type"] as? String,
-            let coordinates = json["coordinates"] as? [[[Double]]]
-        else {
-            return nil
-        }
-
-        self.type = type
-        self.coordinates = coordinates
+        self.type = json["type"] as! String
+        self.coordinates = json["coordinates"] as! [[[Double]]]
     }
 }
 
