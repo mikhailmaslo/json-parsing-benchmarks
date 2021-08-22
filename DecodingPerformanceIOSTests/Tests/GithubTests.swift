@@ -9,12 +9,23 @@ import XCTest
 import Foundation
 import ZippyJSON
 import ExtrasJSON
+import ObjectMapper
 
 class GithubTests: XCTestCase {
     private lazy var data = dataFromFile("github_events.json")
 
     override func setUp() {
         _ = data
+    }
+
+    func testObjectMapper() throws {
+        measure {
+            blackHole(
+                try! Mapper<ghWelcomeElement>().mapArray(
+                    JSONObject: try! JSONSerialization.jsonObject(with: data, options: []) as! [SwiftJSON]
+                )
+            )
+        }
     }
 
     func testJSONSerializer() {

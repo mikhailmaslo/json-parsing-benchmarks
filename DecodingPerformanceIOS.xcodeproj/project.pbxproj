@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D1B8DE026D25E7100BD5B71 /* Twitter+ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DDF26D25E7100BD5B71 /* Twitter+ImmutableMappable.swift */; };
+		7D1B8DE226D2611300BD5B71 /* github_events+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DE126D2611300BD5B71 /* github_events+ObjectMapper.swift */; };
+		7D1B8DE526D2681300BD5B71 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DE426D2681300BD5B71 /* DateFormatterTransform.swift */; };
+		7D1B8DE726D269FD00BD5B71 /* apache+ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B8DE626D269FD00BD5B71 /* apache+ImmutableMappable.swift */; };
 		7D67BB8326D12C5100E883D8 /* DecodingPerformanceIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67BB8226D12C5100E883D8 /* DecodingPerformanceIOSApp.swift */; };
 		7D67BB8526D12C5100E883D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67BB8426D12C5100E883D8 /* ContentView.swift */; };
 		7D67BB8726D12C5300E883D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D67BB8626D12C5300E883D8 /* Assets.xcassets */; };
@@ -34,6 +38,9 @@
 		7DE5708526D14A690050B474 /* JSONSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5708426D14A690050B474 /* JSONSerializable.generated.swift */; };
 		7DE5708726D151500050B474 /* github_events+JSONSerialaizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5708626D151500050B474 /* github_events+JSONSerialaizable.swift */; };
 		7DE5708926D257FD0050B474 /* apache+JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5708826D257FD0050B474 /* apache+JSONSerializer.swift */; };
+		7DE5708B26D25AD20050B474 /* AutoImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5708A26D25AD20050B474 /* AutoImmutableMappable.swift */; };
+		7DE5708E26D25D310050B474 /* AutoImmutableMappable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5708D26D25D310050B474 /* AutoImmutableMappable.generated.swift */; };
+		7DE5709026D25D410050B474 /* Canada+ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5708F26D25D410050B474 /* Canada+ImmutableMappable.swift */; };
 		B068118C6B71C21050853FBE /* libPods-DecodingPerformanceIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AF761DE827ED7CEF8830BD /* libPods-DecodingPerformanceIOS.a */; };
 		D021969FC4A48F2F575F38FD /* libPods-DecodingPerformanceIOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5133070B98CEA9C2BB96F8 /* libPods-DecodingPerformanceIOSTests.a */; };
 /* End PBXBuildFile section */
@@ -50,6 +57,10 @@
 
 /* Begin PBXFileReference section */
 		2C5133070B98CEA9C2BB96F8 /* libPods-DecodingPerformanceIOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DecodingPerformanceIOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1B8DDF26D25E7100BD5B71 /* Twitter+ImmutableMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Twitter+ImmutableMappable.swift"; sourceTree = "<group>"; };
+		7D1B8DE126D2611300BD5B71 /* github_events+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "github_events+ObjectMapper.swift"; sourceTree = "<group>"; };
+		7D1B8DE426D2681300BD5B71 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
+		7D1B8DE626D269FD00BD5B71 /* apache+ImmutableMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "apache+ImmutableMappable.swift"; sourceTree = "<group>"; };
 		7D67BB7F26D12C5100E883D8 /* DecodingPerformanceIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecodingPerformanceIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D67BB8226D12C5100E883D8 /* DecodingPerformanceIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingPerformanceIOSApp.swift; sourceTree = "<group>"; };
 		7D67BB8426D12C5100E883D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +91,10 @@
 		7DE5708426D14A690050B474 /* JSONSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializable.generated.swift; sourceTree = "<group>"; };
 		7DE5708626D151500050B474 /* github_events+JSONSerialaizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "github_events+JSONSerialaizable.swift"; sourceTree = "<group>"; };
 		7DE5708826D257FD0050B474 /* apache+JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "apache+JSONSerializer.swift"; sourceTree = "<group>"; };
+		7DE5708A26D25AD20050B474 /* AutoImmutableMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoImmutableMappable.swift; sourceTree = "<group>"; };
+		7DE5708C26D25B430050B474 /* AutoImmutableMappable.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoImmutableMappable.stencil; sourceTree = "<group>"; };
+		7DE5708D26D25D310050B474 /* AutoImmutableMappable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoImmutableMappable.generated.swift; sourceTree = "<group>"; };
+		7DE5708F26D25D410050B474 /* Canada+ImmutableMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Canada+ImmutableMappable.swift"; sourceTree = "<group>"; };
 		7FFD8D805AA0BAF361AB421D /* Pods-DecodingPerformanceIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformanceIOS.debug.xcconfig"; path = "Target Support Files/Pods-DecodingPerformanceIOS/Pods-DecodingPerformanceIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C5AF761DE827ED7CEF8830BD /* libPods-DecodingPerformanceIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DecodingPerformanceIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7A11ED3E7E1E19B7013AD4 /* Pods-DecodingPerformanceIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformanceIOS.release.xcconfig"; path = "Target Support Files/Pods-DecodingPerformanceIOS/Pods-DecodingPerformanceIOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +133,14 @@
 				E5819CB21DD93461B22FFE33 /* Pods-DecodingPerformanceIOSTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D1B8DE326D2680700BD5B71 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				7D1B8DE426D2681300BD5B71 /* DateFormatterTransform.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 		7D67BB7626D12C5100E883D8 = {
@@ -176,6 +199,7 @@
 		7DD7864F26D12E9000F6D768 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7D1B8DE326D2680700BD5B71 /* Misc */,
 				7DE5707326D13EF50050B474 /* Protocols */,
 				7DE78B8C26D13E0200C8A078 /* Canada */,
 				7DD7865026D12E9000F6D768 /* Twitter */,
@@ -189,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				7DD7865226D12E9000F6D768 /* Twitter.swift */,
+				7D1B8DDF26D25E7100BD5B71 /* Twitter+ImmutableMappable.swift */,
 				7DE5707826D144610050B474 /* Twitter+JSONSerializable.swift */,
 				7DD7865126D12E9000F6D768 /* twitter2.json */,
 				7DD7865526D12E9000F6D768 /* twitter.json */,
@@ -201,6 +226,7 @@
 			children = (
 				7DD7865926D12E9000F6D768 /* github_events.json */,
 				7DE5708626D151500050B474 /* github_events+JSONSerialaizable.swift */,
+				7D1B8DE126D2611300BD5B71 /* github_events+ObjectMapper.swift */,
 				7DD7865A26D12E9000F6D768 /* github_events.swift */,
 			);
 			path = github;
@@ -211,6 +237,7 @@
 			children = (
 				7DD7865C26D12E9000F6D768 /* apache.json */,
 				7DE5708826D257FD0050B474 /* apache+JSONSerializer.swift */,
+				7D1B8DE626D269FD00BD5B71 /* apache+ImmutableMappable.swift */,
 				7DD7865D26D12E9000F6D768 /* apache.swift */,
 			);
 			path = apache;
@@ -232,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				7DE5707426D13F060050B474 /* JSONSerializable.swift */,
+				7DE5708A26D25AD20050B474 /* AutoImmutableMappable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -246,6 +274,7 @@
 		7DE5707D26D1482F0050B474 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				7DE5708D26D25D310050B474 /* AutoImmutableMappable.generated.swift */,
 				7DE5708426D14A690050B474 /* JSONSerializable.generated.swift */,
 			);
 			path = Generated;
@@ -255,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				7DE5707F26D1487A0050B474 /* AnyCodable.swift */,
+				7DE5708C26D25B430050B474 /* AutoImmutableMappable.stencil */,
 				7DE5708326D148800050B474 /* JSONSerializable.stencil */,
 			);
 			path = Templates;
@@ -265,6 +295,7 @@
 			children = (
 				7DE5707626D13F3E0050B474 /* Canada+JSONSerializable.swift */,
 				7DD7865326D12E9000F6D768 /* Canada.swift */,
+				7DE5708F26D25D410050B474 /* Canada+ImmutableMappable.swift */,
 				7DD7865426D12E9000F6D768 /* Canada.json */,
 			);
 			path = Canada;
@@ -472,6 +503,9 @@
 				7DE5707526D13F060050B474 /* JSONSerializable.swift in Sources */,
 				7DE5708126D1487A0050B474 /* AnyCodable.swift in Sources */,
 				7DD7866F26D12E9000F6D768 /* apache.swift in Sources */,
+				7D1B8DE726D269FD00BD5B71 /* apache+ImmutableMappable.swift in Sources */,
+				7DE5709026D25D410050B474 /* Canada+ImmutableMappable.swift in Sources */,
+				7D1B8DE526D2681300BD5B71 /* DateFormatterTransform.swift in Sources */,
 				7DD7867126D12E9000F6D768 /* CanadaTests.swift in Sources */,
 				7DE5707726D13F3E0050B474 /* Canada+JSONSerializable.swift in Sources */,
 				7DD7867326D12E9000F6D768 /* TwitterTests.swift in Sources */,
@@ -479,11 +513,15 @@
 				7DD7866D26D12E9000F6D768 /* github_events.swift in Sources */,
 				7DE5708926D257FD0050B474 /* apache+JSONSerializer.swift in Sources */,
 				7DE5708726D151500050B474 /* github_events+JSONSerialaizable.swift in Sources */,
+				7D1B8DE226D2611300BD5B71 /* github_events+ObjectMapper.swift in Sources */,
 				7DD7866626D12E9000F6D768 /* Twitter.swift in Sources */,
+				7DE5708E26D25D310050B474 /* AutoImmutableMappable.generated.swift in Sources */,
 				7DD7867526D12E9000F6D768 /* ApacheTests.swift in Sources */,
 				7DD7867026D12E9000F6D768 /* Twitter2Tests.swift in Sources */,
 				7DD7867426D12E9000F6D768 /* GithubTests.swift in Sources */,
 				7DD7866726D12E9000F6D768 /* Canada.swift in Sources */,
+				7DE5708B26D25AD20050B474 /* AutoImmutableMappable.swift in Sources */,
+				7D1B8DE026D25E7100BD5B71 /* Twitter+ImmutableMappable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

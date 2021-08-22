@@ -1,0 +1,18 @@
+// MARK: - JSONSerializable
+
+import Foundation
+
+{% for model in types.based.AutoImmutableMappable|struct %}
+extension {{model.name}}: ImmutableMappable {
+    init(map: Map) throws {
+{% for variable in model.storedVariables %}
+{% if variable.isOptional %}
+        self.{{variable.name}} = try? map.value(CodingKeys.{{variable.name}}.rawValue)
+{% else %}
+        self.{{variable.name}} = try map.value(CodingKeys.{{variable.name}}.rawValue)
+{% endif %}
+{% endfor %}
+    }
+}
+
+{% endfor %}

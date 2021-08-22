@@ -11,12 +11,23 @@ import XCTest
 import Foundation
 import ZippyJSON
 import ExtrasJSON
+import ObjectMapper
 
 class Twitter2Tests: XCTestCase {
     private lazy var data = dataFromFile("twitter2.json")
 
     override func setUp() {
         _ = data
+    }
+
+    func testObjectMapper() throws {
+        measure {
+            blackHole(
+                try! Mapper<Twitter>().map(
+                    JSONObject: try! JSONSerialization.jsonObject(with: data, options: []) as! SwiftJSON
+                )
+            )
+        }
     }
 
     func testJSONSerializer() {

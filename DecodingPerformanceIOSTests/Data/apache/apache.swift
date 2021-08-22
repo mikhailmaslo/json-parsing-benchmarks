@@ -12,7 +12,7 @@
 import Foundation
 
 // MARK: - Welcome
-public struct ApacheBuilds: Codable, Equatable {
+struct ApacheBuilds: Codable, Equatable {
     let assignedLabels: [OverallLoad]
     let mode: String
     let nodeDescription: String

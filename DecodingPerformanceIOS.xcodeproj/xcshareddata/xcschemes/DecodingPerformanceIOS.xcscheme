@@ -51,6 +51,9 @@
                   Identifier = "GithubTests/testExtras()">
                </Test>
                <Test
+                  Identifier = "GithubTests/testJSONSerializer()">
+               </Test>
+               <Test
                   Identifier = "GithubTests/testZippy()">
                </Test>
                <Test
@@ -64,6 +67,9 @@
                </Test>
                <Test
                   Identifier = "TwitterTests/testExtras()">
+               </Test>
+               <Test
+                  Identifier = "TwitterTests/testJSONSerializer()">
                </Test>
                <Test
                   Identifier = "TwitterTests/testZippy()">

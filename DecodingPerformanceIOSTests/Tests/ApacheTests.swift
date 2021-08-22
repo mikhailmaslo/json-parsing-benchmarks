@@ -9,12 +9,23 @@ import XCTest
 import Foundation
 import ZippyJSON
 import ExtrasJSON
+import ObjectMapper
 
 class ApacheTests: XCTestCase {
     private lazy var data = dataFromFile("apache.json")
 
     override func setUp() {
         _ = data
+    }
+
+    func testObjectMapper() throws {
+        measure {
+            blackHole(
+                try! Mapper<ApacheBuilds>().map(
+                    JSONObject: try! JSONSerialization.jsonObject(with: data, options: []) as! SwiftJSON
+                )
+            )
+        }
     }
 
     func testJSONSerializer() {
