@@ -1,0 +1,18 @@
+// MARK: - JSONSerializable
+
+import Foundation
+
+{% for model in types.based.AutoJSONSerializable|struct %}
+extension {{model.name}}: JSONSerializable {
+    init?(json: SwiftJSON) {
+{% for variable in model.storedVariables %}
+{% if variable.isOptional %}
+        self.{{variable.name}} = json[CodingKeys.{{variable.name}}.rawValue] as? {{variable.typeName}}
+{% else %}
+        self.{{variable.name}} = json[CodingKeys.{{variable.name}}.rawValue] as! {{variable.typeName}}
+{% endif %}
+{% endfor %}
+    }
+}
+
+{% endfor %}

@@ -37,16 +37,38 @@
                BlueprintName = "DecodingPerformanceIOSTests"
                ReferencedContainer = "container:DecodingPerformanceIOS.xcodeproj">
             </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D67BB9A26D12C5300E883D8"
-               BuildableName = "DecodingPerformanceIOSUITests.xctest"
-               BlueprintName = "DecodingPerformanceIOSUITests"
-               ReferencedContainer = "container:DecodingPerformanceIOS.xcodeproj">
-            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "ApacheTests">
+               </Test>
+               <Test
+                  Identifier = "CanadaTests">
+               </Test>
+               <Test
+                  Identifier = "GithubTests/testCodable()">
+               </Test>
+               <Test
+                  Identifier = "GithubTests/testExtras()">
+               </Test>
+               <Test
+                  Identifier = "GithubTests/testZippy()">
+               </Test>
+               <Test
+                  Identifier = "Twitter2Tests">
+               </Test>
+               <Test
+                  Identifier = "TwitterTests">
+               </Test>
+               <Test
+                  Identifier = "TwitterTests/testCodable()">
+               </Test>
+               <Test
+                  Identifier = "TwitterTests/testExtras()">
+               </Test>
+               <Test
+                  Identifier = "TwitterTests/testZippy()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

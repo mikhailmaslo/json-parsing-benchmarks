@@ -9,6 +9,16 @@ import Foundation
 
 typealias SwiftJSON = [String: Any]
 
+protocol AutoJSONSerializable: JSONSerializable {
+}
+
 protocol JSONSerializable {
     init?(json: SwiftJSON)
 }
+
+extension JSONSerializable {
+    init?(json: SwiftJSON) {
+        preconditionFailure()
+    }
+}
+

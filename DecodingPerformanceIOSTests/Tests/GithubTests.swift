@@ -17,6 +17,16 @@ class GithubTests: XCTestCase {
         _ = data
     }
 
+    func testJSONSerializer() {
+        measure {
+            blackHole(
+                (try! JSONSerialization.jsonObject(with: data, options: []) as! [SwiftJSON]).map {
+                    ghWelcomeElement(json: $0)!
+                }
+            )
+        }
+    }
+
     func testCodable() throws {
         measure {
             let coder = JSONDecoder()

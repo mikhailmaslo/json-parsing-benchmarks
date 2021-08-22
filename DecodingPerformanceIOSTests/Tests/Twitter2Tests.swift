@@ -19,6 +19,14 @@ class Twitter2Tests: XCTestCase {
         _ = data
     }
 
+    func testJSONSerializer() {
+        measure {
+            blackHole(
+                Twitter(json: try! JSONSerialization.jsonObject(with: data, options: []) as! SwiftJSON)!
+            )
+        }
+    }
+
     func testCodable() throws {
         measure {
             blackHole(_ = try! JSONDecoder().decode(Twitter.self, from: data))

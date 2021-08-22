@@ -1,0 +1,6 @@
+sources:
+  - DecodingPerformanceIOSTests
+templates:
+  - DecodingPerformanceIOSTests/Templates
+output:
+  "DecodingPerformanceIOSTests/Generated"
