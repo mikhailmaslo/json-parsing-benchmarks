@@ -17,6 +17,14 @@ class ApacheTests: XCTestCase {
         _ = data
     }
 
+    func testJSONSerializer() {
+        measure {
+            blackHole(
+                (try! JSONSerialization.jsonObject(with: data, options: []) as? SwiftJSON).map(ApacheBuilds.init(json:))!
+            )
+        }
+    }
+
     func testZippy() throws {
         measure {
             blackHole(_ = try! ZippyJSONDecoder().decode(ApacheBuilds.self, from: data))

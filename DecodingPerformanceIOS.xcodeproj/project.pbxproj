@@ -33,6 +33,7 @@
 		7DE5708126D1487A0050B474 /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5707F26D1487A0050B474 /* AnyCodable.swift */; };
 		7DE5708526D14A690050B474 /* JSONSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5708426D14A690050B474 /* JSONSerializable.generated.swift */; };
 		7DE5708726D151500050B474 /* github_events+JSONSerialaizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5708626D151500050B474 /* github_events+JSONSerialaizable.swift */; };
+		7DE5708926D257FD0050B474 /* apache+JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5708826D257FD0050B474 /* apache+JSONSerializer.swift */; };
 		B068118C6B71C21050853FBE /* libPods-DecodingPerformanceIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AF761DE827ED7CEF8830BD /* libPods-DecodingPerformanceIOS.a */; };
 		D021969FC4A48F2F575F38FD /* libPods-DecodingPerformanceIOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5133070B98CEA9C2BB96F8 /* libPods-DecodingPerformanceIOSTests.a */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,7 @@
 		7DE5708326D148800050B474 /* JSONSerializable.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONSerializable.stencil; sourceTree = "<group>"; };
 		7DE5708426D14A690050B474 /* JSONSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializable.generated.swift; sourceTree = "<group>"; };
 		7DE5708626D151500050B474 /* github_events+JSONSerialaizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "github_events+JSONSerialaizable.swift"; sourceTree = "<group>"; };
+		7DE5708826D257FD0050B474 /* apache+JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "apache+JSONSerializer.swift"; sourceTree = "<group>"; };
 		7FFD8D805AA0BAF361AB421D /* Pods-DecodingPerformanceIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformanceIOS.debug.xcconfig"; path = "Target Support Files/Pods-DecodingPerformanceIOS/Pods-DecodingPerformanceIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C5AF761DE827ED7CEF8830BD /* libPods-DecodingPerformanceIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DecodingPerformanceIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7A11ED3E7E1E19B7013AD4 /* Pods-DecodingPerformanceIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformanceIOS.release.xcconfig"; path = "Target Support Files/Pods-DecodingPerformanceIOS/Pods-DecodingPerformanceIOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				7DD7865C26D12E9000F6D768 /* apache.json */,
+				7DE5708826D257FD0050B474 /* apache+JSONSerializer.swift */,
 				7DD7865D26D12E9000F6D768 /* apache.swift */,
 			);
 			path = apache;
@@ -474,6 +477,7 @@
 				7DD7867326D12E9000F6D768 /* TwitterTests.swift in Sources */,
 				7DE5707926D144610050B474 /* Twitter+JSONSerializable.swift in Sources */,
 				7DD7866D26D12E9000F6D768 /* github_events.swift in Sources */,
+				7DE5708926D257FD0050B474 /* apache+JSONSerializer.swift in Sources */,
 				7DE5708726D151500050B474 /* github_events+JSONSerialaizable.swift in Sources */,
 				7DD7866626D12E9000F6D768 /* Twitter.swift in Sources */,
 				7DD7867526D12E9000F6D768 /* ApacheTests.swift in Sources */,
