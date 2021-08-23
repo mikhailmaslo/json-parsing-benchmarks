@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>_Codable_explicit_decode</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        name = try container.decode(String.self, forKey: .name)
+        age = try container.decode(Int.self, forKey: .age)
+        weight = try container.decode(Double.self, forKey: .weight)
+        isMarried = try container.decodeIfPresent(Bool.self, forKey: .isMarried) ?? false
+        children = try container.decodeIfPresent([Person].self, forKey: .children) ?? []
+        favoriteFood = try container.decodeIfPresent([Food].self, forKey: .favoriteFood) ?? []
+        driverLicense = try container.decodeIfPresent(DriverLicense.self, forKey: .driverLicense)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>189BDB4A-2BC4-4E85-97DD-90BC7D7EC7A1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>_Codable_explicit_decode</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

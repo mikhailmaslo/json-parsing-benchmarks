@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>_SwiftyJSON_begin</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct Person {
+    let name: String // required
+    let age: Int     // required
+    let weight: Double  // required
+    let isMarried: Bool      // by default is "false"
+    let children: [Person]   // by default is empty
+    let favoriteFood: [Food] // by default is empty
+
+    let driverLicense: DriverLicense? // by default is nil
+
+    init?(json: JSON) {
+        guard
+            let name = json["name"].string,
+            let age = json["age"].int,
+            let weight = json["weight"].double
+        else {
+            return nil
+        }
+        self.name = name
+        self.age = age
+        self.weight = weight
+        isMarried = json["is_married"].bool ?? false
+        children = json["children"].arrayValue
+            .compactMap { Person(json: $0) }
+        favoriteFood = json["favorite_food"].arrayValue
+            .compactMap { Food(rawValue: $0.stringValue) }
+
+        driverLicense = DriverLicense(json: json["driver_license"])
+    }
+}
+
+enum Food: String {
+    case apple, candy
+}
+
+struct DriverLicense {
+    let id: String // required
+
+    init?(json: JSON) {
+        guard let id = json["id"].string else {
+            return nil
+        }
+
+        self.id = id
+    }
+}
+
+let swiftyJSON = JSON(parseJSON: json)
+let person = Person(json: swiftyJSON)
+print(person!)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8FF76EE3-6EB9-4A3F-A2E9-5998808E4B18</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>_SwiftyJSON_begin</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

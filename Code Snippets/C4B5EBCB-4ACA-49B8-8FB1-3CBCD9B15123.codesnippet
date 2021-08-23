@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>_ObjectMapper_begin</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// ObjectMapper
+
+struct Person: ImmutableMappable {
+    let name: String // required
+    let age: Int     // required
+    let weight: Double  // required
+    let isMarried: Bool      // by default is "false"
+    let children: [Person]   // by default is empty
+    let favoriteFood: [Food] // by default is empty
+
+    let driverLicense: DriverLicense? // by default is nil
+
+    init(map: Map) throws {
+        name = try map.value("name")
+        age = try map.value("age")
+        weight = try map.value("weight")
+        isMarried = try map.value("is_married", default: false)
+        children = map.value("children", default: [])
+        favoriteFood = map.value("favorite_food", default:[])
+        driverLicense = try? map.value("driver_license", default: nil)
+    }
+}
+
+enum Food: String, ImmutableMappable {
+    case apple, candy
+
+    init(map: Map) throws {
+        guard
+            let stringValue: String = map.value(),
+            let food = Food(rawValue: stringValue)
+        else {
+            preconditionFailure()
+        }
+
+        self = food
+    }
+}
+
+struct DriverLicense: ImmutableMappable {
+    let id: String // required
+
+    init(map: Map) throws {
+        id = try map.value("id")
+    }
+}
+
+do {
+    let person = try Mapper&lt;Person&gt;().map(JSONString: json)
+    print(person)
+} catch {
+    print(error)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C4B5EBCB-4ACA-49B8-8FB1-3CBCD9B15123</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>_ObjectMapper_begin</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

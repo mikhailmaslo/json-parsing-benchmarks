@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>_HandyJSON_begin</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct Person: HandyJSON {
+    var name: String! // required
+    var age: Int!     // required
+    var weight: Double!  // required
+    var isMarried: Bool!      // by default is "false"
+    var children: [Person]!   // by default is empty
+    var favoriteFood: [Food]! // by default is empty
+
+    var driverLicense: DriverLicense? // by default is nil
+
+    init() {
+        isMarried = false
+        children = []
+        favoriteFood = []
+    }
+
+    mutating func mapping(mapper: HelpingMapper) {
+        mapper &lt;&lt;&lt;
+            self.isMarried &lt;-- "is_married"
+
+        mapper &lt;&lt;&lt;
+            self.driverLicense &lt;-- "driver_license"
+
+        mapper &lt;&lt;&lt;
+            self.favoriteFood &lt;-- "favorite_food"
+    }
+}
+
+enum Food: String {
+    case apple, candy
+}
+
+struct DriverLicense: HandyJSON {
+    var id: String! // required
+
+    init() {
+    }
+}
+
+let person = Person.deserialize(from: json)
+print(person)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>49CBC583-BFFD-4BC9-BD97-5A586DD3D103</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>_HandyJSON_begin</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>_Codable_begin</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct Person: Codable {
+    enum CodingKeys: String, CodingKey {
+        case name, age, weight, children
+        case isMarried = "is_married"
+        case favoriteFood = "favorite_food"
+        case driverLicense = "driver_license"
+    }
+
+    let name: String // required
+    let age: Int     // required
+    let weight: Double  // required
+    let isMarried: Bool      // by default is "false"
+    let children: [Person]   // by default is empty
+    let favoriteFood: [Food] // by default is empty
+
+    let driverLicense: DriverLicense? // by default is nil
+}
+
+enum Food: String, Codable {
+    case apple, candy
+}
+
+struct DriverLicense: Codable {
+    let id: String // required
+}
+
+do {
+    let person = try JSONDecoder().decode(Person.self, from: jsonData)
+    print(person)
+} catch {
+    print(error)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>27E36919-BC9B-4E67-B7C4-F3F9BF9A77E7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>_Codable_begin</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
