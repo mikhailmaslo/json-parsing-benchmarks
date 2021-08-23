@@ -28,10 +28,6 @@ let json = """
     ],
     "driver_license": {
         "id": "XXX-YYYY-ZZZZ"
-    },
-    "params": {
-        "a": 1,
-        "b": "string"
     }
 }
 """
