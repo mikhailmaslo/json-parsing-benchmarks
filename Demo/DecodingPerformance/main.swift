@@ -23,8 +23,7 @@ let json = """
             "name": "Fred",
             "age": 5,
             "weight": 15,
-            "favorite_food": ["candy"],
-            "nickname": "freddy"
+            "favorite_food": ["candy"]
         }
     ],
     "driver_license": {
@@ -39,34 +38,21 @@ let json = """
 
 let jsonData = json.data(using: .utf8)!
 
-struct Person: AutoCodable {
+struct Person {
     let name: String   // required
     let age: Int       // required
     let weight: Double // required
-    // sourcery: key = is_married, default = false
-    let isMarried: Bool
-    // sourcery: default = Array()
-    let children: [Person]
-    // sourcery: key = favorite_food, default = Array()
-    let favoriteFood: [Food]
+    let isMarried: Bool      // by default is "false"
+    let children: [Person]   // by default is empty
+    let favoriteFood: [Food] // by default is empty
 
-    // sourcery: key = driver_license
     let driverLicense: DriverLicense? // by default is nil
-    let params: AnyCodable?
 }
 
-enum Food: String, AutoCodable {
+enum Food: String {
     case apple, candy
 }
 
-struct DriverLicense: AutoCodable {
+struct DriverLicense {
     let id: String // required
 }
-
-do {
-    let person = try JSONDecoder().decode(Person.self, from: jsonData)
-    print(person)
-} catch {
-    print(error)
-}
-
