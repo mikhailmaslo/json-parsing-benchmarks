@@ -2,7 +2,7 @@
 
 `Demo` - console application for Demo on presentation
 
-`Snippets` - snippets for `Demo` (Copy them `/Users/YourUsername/Library/Developer/Xcode/UserData/CodeSnippets` replacing `YourUsername` with your actual username)
+`Snippets` - snippets for `Demo` (Copy them to `/Users/YourUsername/Library/Developer/Xcode/UserData/CodeSnippets` replacing `YourUsername` with your actual username)
 
 `Benchmarks` - project with tests on iOS platform
 
