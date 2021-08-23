@@ -1,0 +1,6 @@
+sources:
+  - DecodingPerformance
+templates:
+  - DecodingPerformance
+output:
+  "DecodingPerformance/Generated"

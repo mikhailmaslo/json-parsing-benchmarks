@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55F0CF09B6B1D367738EB1BA /* libPods-DecodingPerformance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9005F04912EE400855065177 /* libPods-DecodingPerformance.a */; };
+		7D01D10926D10DC70029888C /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D01D10826D10DC70029888C /* Twitter.swift */; };
+		7D01D10B26D11D9B0029888C /* twitter.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D01D10A26D11D9B0029888C /* twitter.json */; };
+		7D01D10E26D11E4E0029888C /* TwitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D01D10D26D11E4E0029888C /* TwitterTests.swift */; };
+		7D01D11226D120800029888C /* ExtrasJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7D01D11126D120800029888C /* ExtrasJSON */; };
+		7D36EEF426D12697000D597D /* RepeatedTwitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D36EEF326D12697000D597D /* RepeatedTwitterTests.swift */; };
+		7D5EB15126C9703A00768644 /* ParserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5EB14F26C9703A00768644 /* ParserProvider.swift */; };
+		7D5EB15226C9703A00768644 /* TwitterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5EB15026C9703A00768644 /* TwitterParser.swift */; };
+		7D5EB15626C9767C00768644 /* ObjectMapperTwitterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5EB15526C9767C00768644 /* ObjectMapperTwitterParser.swift */; };
+		7D5EB15A26C97BC000768644 /* JSONSerializerParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5EB15926C97BC000768644 /* JSONSerializerParser.swift */; };
+		7D5EB15E26C97F7300768644 /* ZippyJSONTwitterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5EB15D26C97F7300768644 /* ZippyJSONTwitterParser.swift */; };
+		7D5EB16226C980AD00768644 /* HandyJSONTwitterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5EB16126C980AD00768644 /* HandyJSONTwitterParser.swift */; };
+		7D6D2A2F26D0245200AADC87 /* ExtrasJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6D2A2E26D0245200AADC87 /* ExtrasJSON */; };
+		7D6D2A3526D0305D00AADC87 /* AutoCodable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D2A3426D0305D00AADC87 /* AutoCodable.generated.swift */; };
+		7D6D2A3826D030AB00AADC87 /* AutoCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D2A3726D030AB00AADC87 /* AutoCodable.swift */; };
+		7D6D2A3A26D0321C00AADC87 /* AutoEnumCodable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D2A3926D0321C00AADC87 /* AutoEnumCodable.generated.swift */; };
+		7D6D2A3C26D038BF00AADC87 /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D2A3B26D038BF00AADC87 /* AnyCodable.swift */; };
+		7D76EDC726D121C600C8F67A /* github_events.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D76EDC626D121C600C8F67A /* github_events.json */; };
+		7D76EDC926D121E900C8F67A /* github_events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D76EDC826D121E900C8F67A /* github_events.swift */; };
+		7D76EDCB26D1220200C8F67A /* ApacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D76EDCA26D1220200C8F67A /* ApacheTests.swift */; };
+		7D76EDCE26D1250C00C8F67A /* apache.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D76EDCD26D1250C00C8F67A /* apache.json */; };
+		7D76EDD026D1252000C8F67A /* apache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D76EDCF26D1252000C8F67A /* apache.swift */; };
+		7D76EDD226D1254E00C8F67A /* GithubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D76EDD126D1254E00C8F67A /* GithubTests.swift */; };
+		7D9EB9E526C96B34009C2656 /* CodableTwitterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB9E426C96B34009C2656 /* CodableTwitterParser.swift */; };
+		7D9EB9E626C96CAD009C2656 /* TwitterDataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB9E226C967D7009C2656 /* TwitterDataObjects.swift */; };
+		7D9EB9E726C96CB1009C2656 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB9D326C95BB5009C2656 /* DataProvider.swift */; };
+		7D9EB9F226C96F3A009C2656 /* SwiftyJSONTwitterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB9F126C96F3A009C2656 /* SwiftyJSONTwitterParser.swift */; };
+		7DD5494526C95AC600982FCC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5494426C95AC600982FCC /* main.swift */; };
+		7DF445C326D12850004274D2 /* twitter2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DF445C126D12850004274D2 /* twitter2.json */; };
+		7DF445C426D12850004274D2 /* Canada.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DF445C226D12850004274D2 /* Canada.json */; };
+		7DF445C626D1285A004274D2 /* Canada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF445C526D1285A004274D2 /* Canada.swift */; };
+		7DF445C826D1287B004274D2 /* CanadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF445C726D1287B004274D2 /* CanadaTests.swift */; };
+		7DF445CA26D128D5004274D2 /* Twitter2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF445C926D128D5004274D2 /* Twitter2Tests.swift */; };
+		7DFAF5D026CD8DCB002CAEE9 /* CollectionsBenchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 7DFAF5CF26CD8DCB002CAEE9 /* CollectionsBenchmark */; };
+		FE9D3138050B3A12BAEE7530 /* libPods-DecodingPerformanceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FB9AC6B4E488468DA6780F /* libPods-DecodingPerformanceTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7DD5493F26C95AC500982FCC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2117FFE510166E4433871D56 /* Pods-DecodingPerformance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformance.release.xcconfig"; path = "Target Support Files/Pods-DecodingPerformance/Pods-DecodingPerformance.release.xcconfig"; sourceTree = "<group>"; };
+		21F033666FF6BF0758B5D710 /* Pods-DecodingPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformance.debug.xcconfig"; path = "Target Support Files/Pods-DecodingPerformance/Pods-DecodingPerformance.debug.xcconfig"; sourceTree = "<group>"; };
+		29FB9AC6B4E488468DA6780F /* libPods-DecodingPerformanceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DecodingPerformanceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		650ECC5B3CF9AD638BE234A1 /* Pods-DecodingPerformanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformanceTests.release.xcconfig"; path = "Target Support Files/Pods-DecodingPerformanceTests/Pods-DecodingPerformanceTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D01D10826D10DC70029888C /* Twitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
+		7D01D10A26D11D9B0029888C /* twitter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = twitter.json; sourceTree = "<group>"; };
+		7D01D10D26D11E4E0029888C /* TwitterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTests.swift; sourceTree = "<group>"; };
+		7D36EEF326D12697000D597D /* RepeatedTwitterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatedTwitterTests.swift; sourceTree = "<group>"; };
+		7D5EB14F26C9703A00768644 /* ParserProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserProvider.swift; sourceTree = "<group>"; };
+		7D5EB15026C9703A00768644 /* TwitterParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterParser.swift; sourceTree = "<group>"; };
+		7D5EB15526C9767C00768644 /* ObjectMapperTwitterParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperTwitterParser.swift; sourceTree = "<group>"; };
+		7D5EB15926C97BC000768644 /* JSONSerializerParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializerParser.swift; sourceTree = "<group>"; };
+		7D5EB15D26C97F7300768644 /* ZippyJSONTwitterParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZippyJSONTwitterParser.swift; sourceTree = "<group>"; };
+		7D5EB16126C980AD00768644 /* HandyJSONTwitterParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyJSONTwitterParser.swift; sourceTree = "<group>"; };
+		7D6D2A3026D02F0C00AADC87 /* AutoEnumCodable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoEnumCodable.stencil; sourceTree = "<group>"; };
+		7D6D2A3126D02F0C00AADC87 /* AutoCodable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoCodable.stencil; sourceTree = "<group>"; };
+		7D6D2A3426D0305D00AADC87 /* AutoCodable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCodable.generated.swift; sourceTree = "<group>"; };
+		7D6D2A3726D030AB00AADC87 /* AutoCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCodable.swift; sourceTree = "<group>"; };
+		7D6D2A3926D0321C00AADC87 /* AutoEnumCodable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEnumCodable.generated.swift; sourceTree = "<group>"; };
+		7D6D2A3B26D038BF00AADC87 /* AnyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		7D76EDC626D121C600C8F67A /* github_events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = github_events.json; sourceTree = "<group>"; };
+		7D76EDC826D121E900C8F67A /* github_events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = github_events.swift; sourceTree = "<group>"; };
+		7D76EDCA26D1220200C8F67A /* ApacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApacheTests.swift; sourceTree = "<group>"; };
+		7D76EDCD26D1250C00C8F67A /* apache.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = apache.json; sourceTree = "<group>"; };
+		7D76EDCF26D1252000C8F67A /* apache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apache.swift; sourceTree = "<group>"; };
+		7D76EDD126D1254E00C8F67A /* GithubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTests.swift; sourceTree = "<group>"; };
+		7D9EB9D326C95BB5009C2656 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		7D9EB9D926C95C12009C2656 /* DecodingPerformanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecodingPerformanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9EB9DD26C95C12009C2656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D9EB9E226C967D7009C2656 /* TwitterDataObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterDataObjects.swift; sourceTree = "<group>"; };
+		7D9EB9E426C96B34009C2656 /* CodableTwitterParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableTwitterParser.swift; sourceTree = "<group>"; };
+		7D9EB9F126C96F3A009C2656 /* SwiftyJSONTwitterParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSONTwitterParser.swift; sourceTree = "<group>"; };
+		7DD5494126C95AC500982FCC /* DecodingPerformance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DecodingPerformance; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD5494426C95AC600982FCC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7DF445C126D12850004274D2 /* twitter2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = twitter2.json; sourceTree = "<group>"; };
+		7DF445C226D12850004274D2 /* Canada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Canada.json; sourceTree = "<group>"; };
+		7DF445C526D1285A004274D2 /* Canada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canada.swift; sourceTree = "<group>"; };
+		7DF445C726D1287B004274D2 /* CanadaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaTests.swift; sourceTree = "<group>"; };
+		7DF445C926D128D5004274D2 /* Twitter2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitter2Tests.swift; sourceTree = "<group>"; };
+		9005F04912EE400855065177 /* libPods-DecodingPerformance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DecodingPerformance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E631369340DFA52422C72077 /* Pods-DecodingPerformanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformanceTests.debug.xcconfig"; path = "Target Support Files/Pods-DecodingPerformanceTests/Pods-DecodingPerformanceTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D9EB9D626C95C12009C2656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFAF5D026CD8DCB002CAEE9 /* CollectionsBenchmark in Frameworks */,
+				FE9D3138050B3A12BAEE7530 /* libPods-DecodingPerformanceTests.a in Frameworks */,
+				7D01D11226D120800029888C /* ExtrasJSON in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD5493E26C95AC500982FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F0CF09B6B1D367738EB1BA /* libPods-DecodingPerformance.a in Frameworks */,
+				7D6D2A2F26D0245200AADC87 /* ExtrasJSON in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1795FC79FE3456F3B071DCB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9005F04912EE400855065177 /* libPods-DecodingPerformance.a */,
+				29FB9AC6B4E488468DA6780F /* libPods-DecodingPerformanceTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		553A3B01633E85AE41040126 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21F033666FF6BF0758B5D710 /* Pods-DecodingPerformance.debug.xcconfig */,
+				2117FFE510166E4433871D56 /* Pods-DecodingPerformance.release.xcconfig */,
+				E631369340DFA52422C72077 /* Pods-DecodingPerformanceTests.debug.xcconfig */,
+				650ECC5B3CF9AD638BE234A1 /* Pods-DecodingPerformanceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D01D10C26D11DFF0029888C /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				7DF445C226D12850004274D2 /* Canada.json */,
+				7DF445C126D12850004274D2 /* twitter2.json */,
+				7D01D10826D10DC70029888C /* Twitter.swift */,
+				7DF445C526D1285A004274D2 /* Canada.swift */,
+				7D01D10A26D11D9B0029888C /* twitter.json */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		7D6D2A3326D0305D00AADC87 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				7D6D2A3926D0321C00AADC87 /* AutoEnumCodable.generated.swift */,
+				7D6D2A3426D0305D00AADC87 /* AutoCodable.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		7D6D2A3626D0309F00AADC87 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				7D6D2A3126D02F0C00AADC87 /* AutoCodable.stencil */,
+				7D6D2A3026D02F0C00AADC87 /* AutoEnumCodable.stencil */,
+				7D6D2A3726D030AB00AADC87 /* AutoCodable.swift */,
+				7D6D2A3B26D038BF00AADC87 /* AnyCodable.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		7D76EDC526D121BA00C8F67A /* github */ = {
+			isa = PBXGroup;
+			children = (
+				7D76EDC626D121C600C8F67A /* github_events.json */,
+				7D76EDC826D121E900C8F67A /* github_events.swift */,
+			);
+			path = github;
+			sourceTree = "<group>";
+		};
+		7D76EDCC26D124FA00C8F67A /* apache */ = {
+			isa = PBXGroup;
+			children = (
+				7D76EDCD26D1250C00C8F67A /* apache.json */,
+				7D76EDCF26D1252000C8F67A /* apache.swift */,
+			);
+			path = apache;
+			sourceTree = "<group>";
+		};
+		7D9EB9DA26C95C12009C2656 /* DecodingPerformanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D9EB9DD26C95C12009C2656 /* Info.plist */,
+				7D5EB14F26C9703A00768644 /* ParserProvider.swift */,
+				7D5EB15026C9703A00768644 /* TwitterParser.swift */,
+				7D9EB9EF26C96F03009C2656 /* Data */,
+				7D9EB9ED26C96EDC009C2656 /* Parsers */,
+				7D9EB9E826C96EA4009C2656 /* Tests */,
+			);
+			path = DecodingPerformanceTests;
+			sourceTree = "<group>";
+		};
+		7D9EB9E826C96EA4009C2656 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7D76EDCA26D1220200C8F67A /* ApacheTests.swift */,
+				7DF445C726D1287B004274D2 /* CanadaTests.swift */,
+				7D76EDD126D1254E00C8F67A /* GithubTests.swift */,
+				7D36EEF326D12697000D597D /* RepeatedTwitterTests.swift */,
+				7DF445C926D128D5004274D2 /* Twitter2Tests.swift */,
+				7D01D10D26D11E4E0029888C /* TwitterTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7D9EB9ED26C96EDC009C2656 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				7D9EB9E426C96B34009C2656 /* CodableTwitterParser.swift */,
+				7D9EB9F126C96F3A009C2656 /* SwiftyJSONTwitterParser.swift */,
+				7D5EB15526C9767C00768644 /* ObjectMapperTwitterParser.swift */,
+				7D5EB15926C97BC000768644 /* JSONSerializerParser.swift */,
+				7D5EB15D26C97F7300768644 /* ZippyJSONTwitterParser.swift */,
+				7D5EB16126C980AD00768644 /* HandyJSONTwitterParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		7D9EB9EF26C96F03009C2656 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7D76EDCC26D124FA00C8F67A /* apache */,
+				7D76EDC526D121BA00C8F67A /* github */,
+				7D01D10C26D11DFF0029888C /* Twitter */,
+				7D9EB9D326C95BB5009C2656 /* DataProvider.swift */,
+				7D9EB9E226C967D7009C2656 /* TwitterDataObjects.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7DD5493826C95AC500982FCC = {
+			isa = PBXGroup;
+			children = (
+				7DD5494326C95AC600982FCC /* DecodingPerformance */,
+				7D9EB9DA26C95C12009C2656 /* DecodingPerformanceTests */,
+				7DD5494226C95AC500982FCC /* Products */,
+				553A3B01633E85AE41040126 /* Pods */,
+				1795FC79FE3456F3B071DCB0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7DD5494226C95AC500982FCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DD5494126C95AC500982FCC /* DecodingPerformance */,
+				7D9EB9D926C95C12009C2656 /* DecodingPerformanceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DD5494326C95AC600982FCC /* DecodingPerformance */ = {
+			isa = PBXGroup;
+			children = (
+				7D6D2A3626D0309F00AADC87 /* Misc */,
+				7D6D2A3326D0305D00AADC87 /* Generated */,
+				7DD5494426C95AC600982FCC /* main.swift */,
+			);
+			path = DecodingPerformance;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D9EB9D826C95C12009C2656 /* DecodingPerformanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D9EB9DE26C95C12009C2656 /* Build configuration list for PBXNativeTarget "DecodingPerformanceTests" */;
+			buildPhases = (
+				6297361631A4324B313485DD /* [CP] Check Pods Manifest.lock */,
+				7D9EB9D526C95C12009C2656 /* Sources */,
+				7D9EB9D626C95C12009C2656 /* Frameworks */,
+				7D9EB9D726C95C12009C2656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DecodingPerformanceTests;
+			packageProductDependencies = (
+				7DFAF5CF26CD8DCB002CAEE9 /* CollectionsBenchmark */,
+				7D01D11126D120800029888C /* ExtrasJSON */,
+			);
+			productName = DecodingPerformanceTests;
+			productReference = 7D9EB9D926C95C12009C2656 /* DecodingPerformanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DD5494026C95AC500982FCC /* DecodingPerformance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DD5494826C95AC600982FCC /* Build configuration list for PBXNativeTarget "DecodingPerformance" */;
+			buildPhases = (
+				3C9861313B406480E569D70A /* [CP] Check Pods Manifest.lock */,
+				7D6D2A3226D02F2000AADC87 /* Sourcery */,
+				7DD5493D26C95AC500982FCC /* Sources */,
+				7DD5493E26C95AC500982FCC /* Frameworks */,
+				7DD5493F26C95AC500982FCC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DecodingPerformance;
+			packageProductDependencies = (
+				7D6D2A2E26D0245200AADC87 /* ExtrasJSON */,
+			);
+			productName = DecodingPerformance;
+			productReference = 7DD5494126C95AC500982FCC /* DecodingPerformance */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DD5493926C95AC500982FCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7D9EB9D826C95C12009C2656 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					7DD5494026C95AC500982FCC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 7DD5493C26C95AC500982FCC /* Build configuration list for PBXProject "DecodingPerformance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DD5493826C95AC500982FCC;
+			packageReferences = (
+				7DFAF5CE26CD8DCB002CAEE9 /* XCRemoteSwiftPackageReference "swift-collections-benchmark" */,
+				7D6D2A2D26D0245200AADC87 /* XCRemoteSwiftPackageReference "swift-extras-json" */,
+			);
+			productRefGroup = 7DD5494226C95AC500982FCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DD5494026C95AC500982FCC /* DecodingPerformance */,
+				7D9EB9D826C95C12009C2656 /* DecodingPerformanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D9EB9D726C95C12009C2656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF445C426D12850004274D2 /* Canada.json in Resources */,
+				7D01D10B26D11D9B0029888C /* twitter.json in Resources */,
+				7D76EDC726D121C600C8F67A /* github_events.json in Resources */,
+				7DF445C326D12850004274D2 /* twitter2.json in Resources */,
+				7D76EDCE26D1250C00C8F67A /* apache.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C9861313B406480E569D70A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DecodingPerformance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6297361631A4324B313485DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DecodingPerformanceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D6D2A3226D02F2000AADC87 /* Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Sourcery;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n$PODS_ROOT/Sourcery/bin/sourcery\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D9EB9D526C95C12009C2656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D5EB15E26C97F7300768644 /* ZippyJSONTwitterParser.swift in Sources */,
+				7D5EB15626C9767C00768644 /* ObjectMapperTwitterParser.swift in Sources */,
+				7DF445CA26D128D5004274D2 /* Twitter2Tests.swift in Sources */,
+				7D76EDD226D1254E00C8F67A /* GithubTests.swift in Sources */,
+				7D76EDC926D121E900C8F67A /* github_events.swift in Sources */,
+				7D01D10926D10DC70029888C /* Twitter.swift in Sources */,
+				7D01D10E26D11E4E0029888C /* TwitterTests.swift in Sources */,
+				7D9EB9E626C96CAD009C2656 /* TwitterDataObjects.swift in Sources */,
+				7D9EB9F226C96F3A009C2656 /* SwiftyJSONTwitterParser.swift in Sources */,
+				7DF445C826D1287B004274D2 /* CanadaTests.swift in Sources */,
+				7D36EEF426D12697000D597D /* RepeatedTwitterTests.swift in Sources */,
+				7D9EB9E726C96CB1009C2656 /* DataProvider.swift in Sources */,
+				7D9EB9E526C96B34009C2656 /* CodableTwitterParser.swift in Sources */,
+				7D5EB15126C9703A00768644 /* ParserProvider.swift in Sources */,
+				7D76EDCB26D1220200C8F67A /* ApacheTests.swift in Sources */,
+				7D76EDD026D1252000C8F67A /* apache.swift in Sources */,
+				7D5EB16226C980AD00768644 /* HandyJSONTwitterParser.swift in Sources */,
+				7D5EB15A26C97BC000768644 /* JSONSerializerParser.swift in Sources */,
+				7D5EB15226C9703A00768644 /* TwitterParser.swift in Sources */,
+				7DF445C626D1285A004274D2 /* Canada.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD5493D26C95AC500982FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6D2A3526D0305D00AADC87 /* AutoCodable.generated.swift in Sources */,
+				7DD5494526C95AC600982FCC /* main.swift in Sources */,
+				7D6D2A3C26D038BF00AADC87 /* AnyCodable.swift in Sources */,
+				7D6D2A3826D030AB00AADC87 /* AutoCodable.swift in Sources */,
+				7D6D2A3A26D0321C00AADC87 /* AutoEnumCodable.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7D9EB9DF26C95C12009C2656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E631369340DFA52422C72077 /* Pods-DecodingPerformanceTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B8X5DY7Y55;
+				INFOPLIST_FILE = DecodingPerformanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikhailmaslo.DecodingPerformanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7D9EB9E026C95C12009C2656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650ECC5B3CF9AD638BE234A1 /* Pods-DecodingPerformanceTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B8X5DY7Y55;
+				INFOPLIST_FILE = DecodingPerformanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikhailmaslo.DecodingPerformanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7DD5494626C95AC600982FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DD5494726C95AC600982FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7DD5494926C95AC600982FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F033666FF6BF0758B5D710 /* Pods-DecodingPerformance.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8X5DY7Y55;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7DD5494A26C95AC600982FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2117FFE510166E4433871D56 /* Pods-DecodingPerformance.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8X5DY7Y55;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D9EB9DE26C95C12009C2656 /* Build configuration list for PBXNativeTarget "DecodingPerformanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D9EB9DF26C95C12009C2656 /* Debug */,
+				7D9EB9E026C95C12009C2656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DD5493C26C95AC500982FCC /* Build configuration list for PBXProject "DecodingPerformance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DD5494626C95AC600982FCC /* Debug */,
+				7DD5494726C95AC600982FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DD5494826C95AC600982FCC /* Build configuration list for PBXNativeTarget "DecodingPerformance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DD5494926C95AC600982FCC /* Debug */,
+				7DD5494A26C95AC600982FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D6D2A2D26D0245200AADC87 /* XCRemoteSwiftPackageReference "swift-extras-json" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-extras/swift-extras-json.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+		7DFAF5CE26CD8DCB002CAEE9 /* XCRemoteSwiftPackageReference "swift-collections-benchmark" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections-benchmark";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D01D11126D120800029888C /* ExtrasJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D6D2A2D26D0245200AADC87 /* XCRemoteSwiftPackageReference "swift-extras-json" */;
+			productName = ExtrasJSON;
+		};
+		7D6D2A2E26D0245200AADC87 /* ExtrasJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D6D2A2D26D0245200AADC87 /* XCRemoteSwiftPackageReference "swift-extras-json" */;
+			productName = ExtrasJSON;
+		};
+		7DFAF5CF26CD8DCB002CAEE9 /* CollectionsBenchmark */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DFAF5CE26CD8DCB002CAEE9 /* XCRemoteSwiftPackageReference "swift-collections-benchmark" */;
+			productName = CollectionsBenchmark;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7DD5493926C95AC500982FCC /* Project object */;
+}

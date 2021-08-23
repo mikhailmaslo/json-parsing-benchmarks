@@ -1,0 +1,6 @@
+module ZippyJSONCFamily {
+  umbrella header "ZippyJSONCFamily-umbrella.h"
+
+  export *
+  module * { export * }
+}

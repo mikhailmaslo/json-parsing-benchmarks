@@ -1,0 +1,40 @@
+PODS:
+  - HandyJSON (5.0.2)
+  - JJLISO8601DateFormatter (0.1.4)
+  - ObjectMapper (4.2.0)
+  - Sourcery (1.1.1)
+  - SwiftyJSON (5.0.1)
+  - ZippyJSON (1.2.4):
+    - JJLISO8601DateFormatter (= 0.1.4)
+    - ZippyJSONCFamily (= 1.2.4)
+  - ZippyJSONCFamily (1.2.4)
+
+DEPENDENCIES:
+  - HandyJSON
+  - ObjectMapper
+  - Sourcery
+  - SwiftyJSON
+  - ZippyJSON
+
+SPEC REPOS:
+  trunk:
+    - HandyJSON
+    - JJLISO8601DateFormatter
+    - ObjectMapper
+    - Sourcery
+    - SwiftyJSON
+    - ZippyJSON
+    - ZippyJSONCFamily
+
+SPEC CHECKSUMS:
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  JJLISO8601DateFormatter: 9a5cb2f717c6a4f6a36f50b9015813b67f9f38f0
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Sourcery: 1b6aaad642ab634583a3c568ca4cdb96f6af91f7
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  ZippyJSON: fd3ee54ad169ba2d3c2d9216222dab8c12de6ff5
+  ZippyJSONCFamily: 23021697519e64bef73263c4d4108c6811dab6e8
+
+PODFILE CHECKSUM: c1fdf6e4580eead493fbc754e1e555ddb2fcb1e6
+
+COCOAPODS: 1.10.0.rc.1
