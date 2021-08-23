@@ -27,6 +27,7 @@
 		7D67BB8526D12C5100E883D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D67BB8426D12C5100E883D8 /* ContentView.swift */; };
 		7D67BB8726D12C5300E883D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D67BB8626D12C5300E883D8 /* Assets.xcassets */; };
 		7D67BB8A26D12C5300E883D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D67BB8926D12C5300E883D8 /* Preview Assets.xcassets */; };
+		7D92D5BB26D3713800B0DD8E /* AutoCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D92D5BA26D3713800B0DD8E /* AutoCodable.swift */; };
 		7DD7864B26D12E3B00F6D768 /* ZippyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7DD7864A26D12E3B00F6D768 /* ZippyJSON */; };
 		7DD7864E26D12E6000F6D768 /* ExtrasJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7DD7864D26D12E6000F6D768 /* ExtrasJSON */; };
 		7DD7866526D12E9000F6D768 /* twitter2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DD7865126D12E9000F6D768 /* twitter2.json */; };
@@ -95,6 +96,8 @@
 		7D67BB8B26D12C5300E883D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D67BB9026D12C5300E883D8 /* DecodingPerformanceIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecodingPerformanceIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D67BB9626D12C5300E883D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D92D5B926D3712100B0DD8E /* AutoCodable.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoCodable.stencil; sourceTree = "<group>"; };
+		7D92D5BA26D3713800B0DD8E /* AutoCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCodable.swift; sourceTree = "<group>"; };
 		7DD7865126D12E9000F6D768 /* twitter2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = twitter2.json; sourceTree = "<group>"; };
 		7DD7865226D12E9000F6D768 /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
 		7DD7865326D12E9000F6D768 /* Canada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canada.swift; sourceTree = "<group>"; };
@@ -214,7 +217,6 @@
 			children = (
 				7DE5707E26D148640050B474 /* Templates */,
 				7DE5707D26D1482F0050B474 /* Generated */,
-				7DE5707C26D1482B0050B474 /* Misc */,
 				7DD7864F26D12E9000F6D768 /* Data */,
 				7DD7865E26D12E9000F6D768 /* Tests */,
 				7D67BB9626D12C5300E883D8 /* Info.plist */,
@@ -297,13 +299,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		7DE5707C26D1482B0050B474 /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Misc;
-			sourceTree = "<group>";
-		};
 		7DE5707D26D1482F0050B474 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +307,7 @@
 				7DE5708D26D25D310050B474 /* AutoImmutableMappable.generated.swift */,
 				7DE5708426D14A690050B474 /* JSONSerializable.generated.swift */,
 				7D1B8DE926D278CD00BD5B71 /* AutoSwiftyJSON.swift */,
+				7D92D5BA26D3713800B0DD8E /* AutoCodable.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -321,6 +317,7 @@
 			children = (
 				7DE5707F26D1487A0050B474 /* AnyCodable.swift */,
 				7DE5708C26D25B430050B474 /* AutoImmutableMappable.stencil */,
+				7D92D5B926D3712100B0DD8E /* AutoCodable.stencil */,
 				7D1B8DF526D2887300BD5B71 /* AutoHandyJSONable.stencil */,
 				7D1B8DE826D277CE00BD5B71 /* AutoSwiftyJSONable.stencil */,
 				7DE5708326D148800050B474 /* JSONSerializable.stencil */,
@@ -568,6 +565,7 @@
 				7DD7867026D12E9000F6D768 /* Twitter2Tests.swift in Sources */,
 				7DD7867426D12E9000F6D768 /* GithubTests.swift in Sources */,
 				7DD7866726D12E9000F6D768 /* Canada.swift in Sources */,
+				7D92D5BB26D3713800B0DD8E /* AutoCodable.swift in Sources */,
 				7D1B8DFD26D28D4D00BD5B71 /* Twitter+HandyJSON.swift in Sources */,
 				7DE5708B26D25AD20050B474 /* AutoImmutableMappable.swift in Sources */,
 				7D1B8DFB26D28A3600BD5B71 /* AutoHandyJSONable.generated.swift in Sources */,

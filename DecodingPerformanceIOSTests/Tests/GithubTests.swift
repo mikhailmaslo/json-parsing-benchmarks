@@ -74,11 +74,11 @@ class GithubTests: XCTestCase {
         }
     }
 
-    func testExtras() throws {
-        measure {
-//            blackHole(_ = try! XJSONDecoder().decode(ghEvents.self, from: data))
-        }
-    }
+//    func testExtras() throws {
+//        measure {
+////            blackHole(_ = try! XJSONDecoder().decode(ghEvents.self, from: data))
+//        }
+//    }
 
     func dataFromFile(_ file: String) -> Data {
         let path = Bundle(for: type(of: self)).path(forResource: file, ofType: "")!

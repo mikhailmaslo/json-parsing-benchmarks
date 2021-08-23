@@ -19,6 +19,14 @@ class TwitterTests: XCTestCase {
         _ = data
     }
 
+    func testJSON() throws {
+        measure {
+            blackHole(
+                try! JSONSerialization.jsonObject(with: data, options: []) as! SwiftJSON
+            )
+        }
+    }
+
     func testHandyJSON() throws {
         measure {
             blackHole(

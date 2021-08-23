@@ -45,21 +45,6 @@
                   Identifier = "CanadaTests">
                </Test>
                <Test
-                  Identifier = "GithubTests/testCodable()">
-               </Test>
-               <Test
-                  Identifier = "GithubTests/testExtras()">
-               </Test>
-               <Test
-                  Identifier = "GithubTests/testJSONSerializer()">
-               </Test>
-               <Test
-                  Identifier = "GithubTests/testObjectMapper()">
-               </Test>
-               <Test
-                  Identifier = "GithubTests/testZippy()">
-               </Test>
-               <Test
                   Identifier = "Twitter2Tests">
                </Test>
                <Test
