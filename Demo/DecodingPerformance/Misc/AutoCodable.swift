@@ -7,4 +7,3 @@
 
 protocol AutoCodable: Encodable, Decodable {
 }
-

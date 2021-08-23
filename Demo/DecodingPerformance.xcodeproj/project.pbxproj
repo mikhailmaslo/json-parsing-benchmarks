@@ -11,7 +11,6 @@
 		7D6D2A2F26D0245200AADC87 /* ExtrasJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6D2A2E26D0245200AADC87 /* ExtrasJSON */; };
 		7D6D2A3526D0305D00AADC87 /* AutoCodable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D2A3426D0305D00AADC87 /* AutoCodable.generated.swift */; };
 		7D6D2A3826D030AB00AADC87 /* AutoCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D2A3726D030AB00AADC87 /* AutoCodable.swift */; };
-		7D6D2A3A26D0321C00AADC87 /* AutoEnumCodable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D2A3926D0321C00AADC87 /* AutoEnumCodable.generated.swift */; };
 		7D6D2A3C26D038BF00AADC87 /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D2A3B26D038BF00AADC87 /* AnyCodable.swift */; };
 		7DD5494526C95AC600982FCC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5494426C95AC600982FCC /* main.swift */; };
 /* End PBXBuildFile section */
@@ -33,11 +32,9 @@
 		21F033666FF6BF0758B5D710 /* Pods-DecodingPerformance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformance.debug.xcconfig"; path = "Target Support Files/Pods-DecodingPerformance/Pods-DecodingPerformance.debug.xcconfig"; sourceTree = "<group>"; };
 		29FB9AC6B4E488468DA6780F /* libPods-DecodingPerformanceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DecodingPerformanceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		650ECC5B3CF9AD638BE234A1 /* Pods-DecodingPerformanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodingPerformanceTests.release.xcconfig"; path = "Target Support Files/Pods-DecodingPerformanceTests/Pods-DecodingPerformanceTests.release.xcconfig"; sourceTree = "<group>"; };
-		7D6D2A3026D02F0C00AADC87 /* AutoEnumCodable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoEnumCodable.stencil; sourceTree = "<group>"; };
 		7D6D2A3126D02F0C00AADC87 /* AutoCodable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoCodable.stencil; sourceTree = "<group>"; };
 		7D6D2A3426D0305D00AADC87 /* AutoCodable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCodable.generated.swift; sourceTree = "<group>"; };
 		7D6D2A3726D030AB00AADC87 /* AutoCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCodable.swift; sourceTree = "<group>"; };
-		7D6D2A3926D0321C00AADC87 /* AutoEnumCodable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEnumCodable.generated.swift; sourceTree = "<group>"; };
 		7D6D2A3B26D038BF00AADC87 /* AnyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
 		7DD5494126C95AC500982FCC /* DecodingPerformance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DecodingPerformance; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD5494426C95AC600982FCC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -81,7 +78,6 @@
 		7D6D2A3326D0305D00AADC87 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				7D6D2A3926D0321C00AADC87 /* AutoEnumCodable.generated.swift */,
 				7D6D2A3426D0305D00AADC87 /* AutoCodable.generated.swift */,
 			);
 			path = Generated;
@@ -91,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				7D6D2A3126D02F0C00AADC87 /* AutoCodable.stencil */,
-				7D6D2A3026D02F0C00AADC87 /* AutoEnumCodable.stencil */,
 				7D6D2A3726D030AB00AADC87 /* AutoCodable.swift */,
 				7D6D2A3B26D038BF00AADC87 /* AnyCodable.swift */,
 			);
@@ -238,7 +233,6 @@
 				7DD5494526C95AC600982FCC /* main.swift in Sources */,
 				7D6D2A3C26D038BF00AADC87 /* AnyCodable.swift in Sources */,
 				7D6D2A3826D030AB00AADC87 /* AutoCodable.swift in Sources */,
-				7D6D2A3A26D0321C00AADC87 /* AutoEnumCodable.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

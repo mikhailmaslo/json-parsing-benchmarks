@@ -30,7 +30,6 @@ extension Person: Codable {
         case children 
         case favoriteFood = "favorite_food" 
         case driverLicense = "driver_license" 
-        case params 
     }
 
     public func encode(to encoder: Encoder) throws {
@@ -42,7 +41,6 @@ extension Person: Codable {
         try container.encode(children, forKey: .children)
         try container.encode(favoriteFood, forKey: .favoriteFood)
         try container.encode(driverLicense, forKey: .driverLicense)
-        try container.encode(params, forKey: .params)
     }
 
     public init(from decoder: Decoder) throws {
@@ -54,8 +52,7 @@ extension Person: Codable {
             isMarried: try values.decodeIfPresent(Bool.self, forKey: .isMarried) ?? false,
             children: try values.decodeIfPresent([Person].self, forKey: .children) ?? Array(),
             favoriteFood: try values.decodeIfPresent([Food].self, forKey: .favoriteFood) ?? Array(),
-            driverLicense: try values.decodeIfPresent(DriverLicense.self, forKey: .driverLicense),
-            params: try values.decodeIfPresent(AnyCodable.self, forKey: .params)
+            driverLicense: try values.decodeIfPresent(DriverLicense.self, forKey: .driverLicense)
         )
     }
 }

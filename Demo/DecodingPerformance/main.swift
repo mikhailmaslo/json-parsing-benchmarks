@@ -37,22 +37,3 @@ let json = """
 """
 
 let jsonData = json.data(using: .utf8)!
-
-struct Person {
-    let name: String   // required
-    let age: Int       // required
-    let weight: Double // required
-    let isMarried: Bool      // by default is "false"
-    let children: [Person]   // by default is empty
-    let favoriteFood: [Food] // by default is empty
-
-    let driverLicense: DriverLicense? // by default is nil
-}
-
-enum Food: String {
-    case apple, candy
-}
-
-struct DriverLicense {
-    let id: String // required
-}
