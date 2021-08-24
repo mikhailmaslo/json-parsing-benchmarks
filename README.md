@@ -6,6 +6,24 @@
 
 `Benchmarks` - project with tests on iOS platform
 
+# Benchmark results
+
+## Twitter
+
+![Twitter](https://github.com/mikhailmaslo/json-parsing-benchmarks/blob/master/Presentation/twitter.jpg)
+
+## Canada
+
+![Canada](https://github.com/mikhailmaslo/json-parsing-benchmarks/blob/master/Presentation/canada.jpg)
+
+## Apache
+
+![Apache](https://github.com/mikhailmaslo/json-parsing-benchmarks/blob/master/Presentation/apache.jpg)
+
+## Github
+
+![Github](https://github.com/mikhailmaslo/json-parsing-benchmarks/blob/master/Presentation/github.jpg)
+
 # Links
 
 ## Used Libraries
