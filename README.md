@@ -41,3 +41,4 @@
 - [Sourcery in practice](https://khanlou.com/2017/09/sourcery-in-practice/) - example for (auto) Codable
 - [How GTA V load time was cut by 70 %](https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/) (spoiler: json was too big and parsing implementation was too naive)
 - What Apple [thought](https://developer.apple.com/swift/blog/?id=37) about reflection before Codable was released
+- [Parsing JSON Really Quickly: Lessons Learned](https://www.youtube.com/watch?v=wlvKAT7SZIQ) - by the author of [simdjson](https://github.com/simdjson/simdjson)
